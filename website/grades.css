@@ -1,0 +1,39 @@
+* {
+	font-family: sans-serif;
+}
+
+html {
+	height:  100%;
+}
+
+body {
+	margin:  0px;
+	padding:  0px;
+	height:  100%;
+	background: linear-gradient(90deg, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+table {
+	padding-left: 10px;
+	font-size: 20px;
+	padding-bottom: 20px;
+}
+
+h1 {
+	width: 100%;
+	background-color: rgba(255,255,255, 0.35);
+	height: 40px;
+	opacity: 70%;
+  	text-align: center;
+  	padding-top: 10px;
+}
+
+h2 {
+	padding-left: 10px;
+}
+
+.first {
+	padding-top: 10px;
+}
