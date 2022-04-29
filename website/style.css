@@ -51,7 +51,7 @@ footer {
 	height: 40px;
 	opacity: 70%;
 	bottom: 0px;
-  	position: absolute;
+  	position: fixed;
   	align-items: center;
 }
 
