@@ -10,6 +10,23 @@ img {
 	width: 300px;
 }
 
-#about, #projects, #grades {
+#about, #projects, #grades, #playlist {
 	padding: 10px;
 }
+
+.display-5 {
+	background-color: rgba(255,255,255, 0.2);
+}
+
+#cards {
+	display: flex;
+	justify-content: space-around;
+	align-content: space-around;
+	flex-wrap: wrap;
+}
+
+.card {
+	color: white;
+	background-color: rgba(0,0,0, 0.5);
+}
+
