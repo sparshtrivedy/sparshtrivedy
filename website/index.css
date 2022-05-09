@@ -6,7 +6,7 @@ body {
 	background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 43%, rgba(253,85,44,1) 66%);
 }
 
-img {
+#projects img {
 	width: 300px;
 }
 
@@ -30,3 +30,18 @@ img {
 	background-color: rgba(0,0,0, 0.5);
 }
 
+#shows {
+	text-align: center;
+}
+
+#shows img {
+	width: 100%;
+}
+
+h6 {
+	color: white;
+}
+
+.accordion-item button {
+	color: white;
+}
