@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./resources/css/index.css">
+    <!-- Lato font / Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+
+    <link rel="icon" href="./resources/images/code-solid.svg">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/428865f274.js" crossorigin="anonymous"></script>
+    <!-- Document browser tab title -->
+    <title>My Portfolio</title>
+</head>
+<body>
+    <header>
+        <h1>Sparsh Trivedy</h1>
+        <ul>
+            <li><a href="#about-me">About Me</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li id="last-item"><a href="#contacts">Contact</a></li>
+        </ul>
+    </header>
+    <main>
+        <section id="left">
+            <img id="sparsh-pic" src="./resources/images/sparsh.jpeg" alt="sparsh's photo">
+            <button id="fun-fact">Fun Fact</button>
+            <p id='more-info'>
+                JavaScript can also handle requests and responses on a website. It's a great language to master for front-end and back-end web development.
+            </p>
+        </section>
+        <section id="right">
+            <div id="about-me">
+                <h2>About Me</h2>
+                <p>
+                    Hi! I am Sparsh Trivedy, a third year Computer Science major at the University of British Columbia. My interests lie in 
+                    Software Engineering and Front-end Web Development. My interest in Software Engineering developed through projects I got 
+                    to work on in my courses at university. I started Web Development outside the classroom, and my interest in the field only 
+                    compounded after working on several personal projects.
+                </p>
+                <p class="last">
+                    In my free time I like to do digital sketches, reading crime fictions and swimming. I also enjoy mathematics and working
+                    with data.
+                </p>
+            </div>
+            <div id="projects">
+                <h2>Projects</h2>
+                <div class="project">
+                    <h3 id="cafe-kiosk-heading">Cafe Kiosk<i class="fa-solid fa-angle-down angle-icon ck-icon"></i></h3>
+                    <div id="cafe-kiosk-content">
+                        <p>
+                            <img class="right" src="./resources/images/cafe-kiosk.jpg" alt="cafe-kiosk interface">
+                            An interactive coffee ordering application. The application allows the user to add drinks to cart, remove drinks from cart, 
+                            view order summary, place order and generate bill. The application also loggs and keeps track of when a drink is added or 
+                            removed from the cart. I implemented the JSON reader and writer classes to add saving and loading functionality. I used the 
+                            Java Swing library to add a graphical user interface to make the application more user friendly. The application was written 
+                            with software design principles in mind and tested using JUnit.
+                        </p>
+                        <p>
+                            Languages: Java
+                        </p>
+                    </div>
+                </div>
+                <div class="project">
+                    <h3 id="image-partition-heading">Image Partitioning Trees<i class="fa-solid fa-angle-down angle-icon ip-icon"></i></h3>
+                    <div id="image-partition-content">
+                        <p>
+                            Constructed a PTree(a binary tree whose nodes represent rectangular regions of a PNG image). Implemented the render function
+                            to contruct the PNG. Implemented the Prune function which attempts, starting near the top of a freshly built tree, to remove 
+                            all of the descendants of a node, if all of the leaf nodes below the current node have colour within tolerance of the node's 
+                            average colour. Pruning degrades the image quality. Finally, I implemented two additional functions to flip the PTree 
+                            horizontally and vertically.
+                        </p>
+                        <p>
+                            Languages: C++
+                        </p>  
+                        <div id="figures">
+                            <figure>
+                                <img class="proj-pic" src="./resources/images/un-pruned.png" alt="un-pruned image">
+                                <figcaption>un-pruned image</figcaption>
+                            </figure>
+                            <figure>
+                                <img class="proj-pic" src="./resources/images/pruned.png" alt="pruned image">
+                                <figcaption>pruned-image</figcaption>
+                            </figure>
+                        </div>
+                    </div>      
+                </div>
+                <div class="project">
+                    <h3 id="background-generator-heading">Background Generator<i class="fa-solid fa-angle-down angle-icon bg-icon"></i></h3>
+                    <div id="background-generator-content">
+                        <p>
+                            <img class="right" src="./resources/images/bg.jpg" alt="background generator interface">
+                            This application allows a user to pick the kind of gradient and the composite colours from a colour picker, and displays the 
+                            chosen background along with the corresponding CSS code. I have used this application to generate gradient backgrounds for some 
+                            of my future projects.
+                        </p>
+                        <p>
+                            Languages: HTML, CSS, JavaScript
+                        </p>      
+                    </div>
+                </div>
+                <div class="project">
+                    <h3 id="image-detector-heading">Image Detector<i class="fa-solid fa-angle-down angle-icon id-icon"></i></h3>
+                    <div id="image-detector-content">
+                        <p>
+                            <img class="right" src="./resources/images/detect.png" alt="image detector interface">
+                            A frontend application that allows a user to enter an image url and detects the object in the image. I used the Clarifai-API, an 
+                            API that uses machine learning to detect the object in an image. I selected the top 5 most probable results to display to the user. 
+                            The image corresponding to the url is also displayed along with the result.
+                        </p>
+                        <p>
+                            Languages: HTML, CSS, JavaScript, React.js
+                        </p>    
+                    </div>  
+                </div>
+                <div class="project">
+                    <h3 id="note-maker-heading">Note Maker<i class="fa-solid fa-angle-down angle-icon nm-icon"></i></h3>
+                    <div id="note-maker-content">
+                        <p>
+                            <img class="right" src="./resources/images/note-maker.jpeg" alt="note-maker interface">
+                            A web application developed in React.js that sends the topic for notes as plain text prompts to OpenAI API and displays the results 
+                            in a list. I implemented a form for entering topic which on submitting displays a log of results in a list, sorted from newest to oldest.
+                        </p>
+                        <p class="last">
+                            Languages: HTML, CSS, JavaScript, React.js
+                        </p>  
+                    </div>    
+                </div>
+            </div>
+            <div id="experience">
+                <h2 id="exp">Experience</h2>
+                <h3>BGC Engineering</h3>
+                <h4>Web & Mobile QA Tester Co-op</h4>
+                <p>
+                    starting September ...
+                </p>
+                <h3>Browns Crafthouse</h3>
+                <h4>Prep-Cook and Dishwasher</h4>
+                <p>
+                    Worked in small teams where effective communication is essential. Adapted to a busy work environment where people depend on me to stick to deadlines.
+                    Learnt to deal with unexpected rushes/situations.
+                </p>
+                <h3>Science Undergraduate Society</h3>
+                <h4>Academic Experience Coordinator</h4>
+                <p class="last">
+                    Work with other coordinators to enhance the academic experience of undergraduate students in the faculty of Science. Responsible for organizing faculty
+                    wide surveys, tutoring and group-study sessions.
+                </p>
+            </div>
+            <div id="skills">
+                <h2>Skills</h2>
+                <p>
+                    <span>Programming: </span>
+                    Java, C++, C, JavaScript, SQL, Python, R
+                </p>
+                <p>
+                    <span>Web: </span>
+                    HTML, CSS, React.js
+                </p>
+                <p>
+                    <span>Tools: </span>
+                    GitHub, Git, Bootstrap, NPM, GDB, Valgrind, Excel
+                </p>
+                <p class="last">
+                    <span>Testing: </span>
+                    JUnit, Mocha, Jest
+                </p>
+            </div>
+            <div id="contacts">
+                <h2>Contact</h2>
+                <p>Have a project in mind? want to chat? I'd love to hear from you!</p>
+                <p id="icons">
+                    <a class="contact" href="https://www.linkedin.com/in/sparsh-trivedy-50b60a1a6/">
+                        <i class="fa-brands fa-linkedin icon"></i>
+                    </a>
+                    <a class="contact" href="https://www.facebook.com/profile.php?id=100008097134710">
+                        <i class="fa-brands fa-facebook icon"></i>
+                    </a>
+                    <a class="contact" href="https://github.com/sparshtrivedy">
+                        <i class="fa-brands fa-github icon"></i>
+                    </a>
+                    <a class="contact" href="https://www.instagram.com/sparshtrivedy/">
+                        <i class="fa-brands fa-instagram icon"></i>
+                    </a>
+                    <a class="contact" href="mailto: sparsh.trivedy2140@gmail.com">
+                        <i class="fa-solid fa-envelope icon"></i>
+                    </a>
+                </p>
+                <a href="./resources/Sparsh_Trivedy_Resume.pdf" target="_blank"><button id="resume"> Resume <i class="fa-solid fa-download download"></i></button></a>
+            </div>
+        </section>
+    </main>
+</body>
+<script src="./index.js"></script>
+</html>
