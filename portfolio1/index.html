@@ -30,57 +30,113 @@
     </header>
     <main>
         <section id="left">
-            <img id="sparsh-pic" src="./resources/images/sparsh.jpeg" alt="sparsh's photo">
+            <img id="sparsh-pic" src="./resources/images/sparsh.jpeg" alt="sparsh's photo" class="responsive" width="400">
             <button id="fun-fact">Fun Fact</button>
             <p id='more-info'>
-                JavaScript can also handle requests and responses on a website. It's a great language to master for front-end and back-end web development.
+                JavaScript can also handle requests and responses on a website. It's a great language to master for front-end and back-end web 
+                development.
             </p>
         </section>
         <section id="right">
             <div id="about-me">
                 <h2>About Me</h2>
                 <p>
-                    Hi! I am Sparsh Trivedy, a third year Computer Science major at the University of British Columbia. My interests lie in 
-                    Software Engineering and Front-end Web Development. My interest in Software Engineering developed through projects I got 
-                    to work on in my courses at university. I started Web Development outside the classroom, and my interest in the field only 
-                    compounded after working on several personal projects.
+                    Hi! I am Sparsh Trivedy, a second year Computer Science major at the University of British Columbia. My interests lie in 
+                    Software Engineering and Web Development, Front-end Web Development in particular. 
                 </p>
                 <p class="last">
-                    In my free time I like to do digital sketches, reading crime fictions and swimming. I also enjoy mathematics and working
-                    with data.
+                    When I am not working, you can find me curled up on the couch reading a book, doing digital sketches or cafe hopping 
+                    around Vancouver.
                 </p>
-            </div>
+            </div>   
             <div id="projects">
                 <h2>Projects</h2>
                 <div class="project">
-                    <h3 id="cafe-kiosk-heading">Cafe Kiosk<i class="fa-solid fa-angle-down angle-icon ck-icon"></i></h3>
-                    <div id="cafe-kiosk-content">
+                    <h3 id="personal-budget-heading">Personal Budget API<i class="fa-solid fa-angle-down angle-icon pb-icon"></i></h3>
+                    <div id="personal-budget-content">
+                        <p>August 2022</p>
                         <p>
-                            <img class="right" src="./resources/images/cafe-kiosk.jpg" alt="cafe-kiosk interface">
-                            An interactive coffee ordering application. The application allows the user to add drinks to cart, remove drinks from cart, 
-                            view order summary, place order and generate bill. The application also loggs and keeps track of when a drink is added or 
-                            removed from the cart. I implemented the JSON reader and writer classes to add saving and loading functionality. I used the 
-                            Java Swing library to add a graphical user interface to make the application more user friendly. The application was written 
-                            with software design principles in mind and tested using JUnit.
+                            This is a REST API that is used to keep track of an individual's personal budget. A user can add categories to/remove categories from their 
+                            budget and assign a balance amount to each category. 
+                            <br><br>
+                            Any debit or credit is reflected on the remaining balance. We also have a separate table of transactions
+                            that keeps track of any and all transactions between the categories of our budget. 
+                            <br><br>
+                            We have two separate tables - one for the personal budget with its different categories, and one for the transactions between these categories with their 
+                            dates and amounts. Any change in one of these tables is reflected on the other. 
+                            <br><br>
+                            The database, with these tables, is deigned using PostgreSQL and the server that handles the HTTP requests is designed using Express. The server and 
+                            database are connected using node-postgres and this API is documented using Swagger API.
                         </p>
                         <p>
-                            Languages: Java
+                            Languages:  Node.js, Express, SQL
                         </p>
+                    </div>    
+                </div>
+                <div class="project">
+                    <h3 id="vibing-heading">Vibing<i class="fa-solid fa-angle-down angle-icon vb-icon"></i></h3>
+                    <div id="vibing-content">
+                        <p>July 2022</p>
+                        <p>
+                            <img class="right" src="./resources/images/vibing.jpg" alt="vibing interface">
+                            This is a front-end application that allows a user to browse songs, add them to a playlist and save it to Spotify. this
+                            functionality was made possible using the Spotify API.
+                            <br><br>
+                            The user can search for songs, albums or artists and the search results, fetched from Spotify, are displayed to the users in 
+                            the "Search Results" column. The users can then select the songs that they wish to add to their playlist. The users can even 
+                            choose a name for their playlist, remove songs from the playlist and save it to Spotify.
+                        </p>
+                        <p>
+                            Languages: HTML, CSS, JavaScript, React.js
+                        </p>      
                     </div>
+                </div>
+                <div class="project">
+                    <h3 id="note-maker-heading">Note Maker<i class="fa-solid fa-angle-down angle-icon nm-icon"></i></h3>
+                    <div id="note-maker-content">
+                        <p>May 2022</p>
+                        <p>
+                            <img class="right" src="./resources/images/note-maker.jpeg" alt="note-maker interface">
+                            This is a front-end application, implemented in React.js, that sends the topic for notes as plain text prompts to OpenAI API and displays the results 
+                            in a list. The user is able to enter the topic in a form, which on submitting displays a log of results in a list, sorted from newest to oldest.
+                        </p>
+                        <p class="last">
+                            Languages: HTML, CSS, JavaScript, React.js
+                        </p>  
+                    </div>    
+                </div>
+                <div class="project">
+                    <h3 id="image-detector-heading">Image Detector<i class="fa-solid fa-angle-down angle-icon id-icon"></i></h3>
+                    <div id="image-detector-content">
+                        <p>April 2022</p>
+                        <p>
+                            <img class="right" src="./resources/images/detect.png" alt="image detector interface">
+                            This is a front-end application that allows its users to enter an image url and detects the objects in that image. This behaviour
+                            was implemented using the Clarifai-API, that uses machine learning to detect the objects in an image. The application displays the 
+                            5 most probable results to the user, along with the image corresponding to the url entered by the user.
+                        </p>
+                        <p>
+                            Languages: HTML, CSS, JavaScript, React.js
+                        </p>    
+                    </div>  
                 </div>
                 <div class="project">
                     <h3 id="image-partition-heading">Image Partitioning Trees<i class="fa-solid fa-angle-down angle-icon ip-icon"></i></h3>
                     <div id="image-partition-content">
+                        <p>March 2022</p>
                         <p>
-                            Constructed a PTree(a binary tree whose nodes represent rectangular regions of a PNG image). Implemented the render function
-                            to contruct the PNG. Implemented the Prune function which attempts, starting near the top of a freshly built tree, to remove 
-                            all of the descendants of a node, if all of the leaf nodes below the current node have colour within tolerance of the node's 
-                            average colour. Pruning degrades the image quality. Finally, I implemented two additional functions to flip the PTree 
-                            horizontally and vertically.
+                            This application, implemented in C++, uses a binary tree (PTree) to represent an image. The nodes of this tree represent rectangular 
+                            regions of a PNG image. 
+                            <br><br>
+                            Operations on this tree allow us to Prune the tree which results in a more pixelated image. The Prune function attempts, starting 
+                            near the top of a freshly built tree, to remove all the descendants of a node, if all of the leaf nodes below the current 
+                            node have colour within tolerance of the node's average colour. This application also allows us to flip an image both horizontally 
+                            and vertically. The effects of these operations can be observed using the render function which renders an image using the root node
+                            of a tree as an input.
                         </p>
                         <p>
                             Languages: C++
-                        </p>  
+                        </p> 
                         <div id="figures">
                             <figure>
                                 <img class="proj-pic" src="./resources/images/un-pruned.png" alt="un-pruned image">
@@ -94,65 +150,44 @@
                     </div>      
                 </div>
                 <div class="project">
-                    <h3 id="background-generator-heading">Background Generator<i class="fa-solid fa-angle-down angle-icon bg-icon"></i></h3>
-                    <div id="background-generator-content">
+                    <h3 id="cafe-kiosk-heading">Cafe Kiosk<i class="fa-solid fa-angle-down angle-icon ck-icon"></i></h3>
+                    <div id="cafe-kiosk-content">
+                        <p>December 2021</p>
                         <p>
-                            <img class="right" src="./resources/images/bg.jpg" alt="background generator interface">
-                            This application allows a user to pick the kind of gradient and the composite colours from a colour picker, and displays the 
-                            chosen background along with the corresponding CSS code. I have used this application to generate gradient backgrounds for some 
-                            of my future projects.
+                            <img class="right" src="./resources/images/cafe-kiosk.jpg" alt="cafe-kiosk interface">
+                            This is an interactive coffee ordering application, implemented in Java, that allows a user to add/remove drinks 
+                            from the shopping cart, view order summary, generate bill and place an order. 
+                            <br><br> 
+                            This application makes use of an API that allows its users to save and load their orders. It also keeps a log each 
+                            time a drink is added or removed from the cart. The Java Swing library was used to add a Graphical User Interface 
+                            and make the application more user friendly. This application was designed with software design principles in mind 
+                            and tested using JUnit.
                         </p>
                         <p>
-                            Languages: HTML, CSS, JavaScript
-                        </p>      
+                            Languages: Java
+                        </p>
                     </div>
-                </div>
-                <div class="project">
-                    <h3 id="image-detector-heading">Image Detector<i class="fa-solid fa-angle-down angle-icon id-icon"></i></h3>
-                    <div id="image-detector-content">
-                        <p>
-                            <img class="right" src="./resources/images/detect.png" alt="image detector interface">
-                            A frontend application that allows a user to enter an image url and detects the object in the image. I used the Clarifai-API, an 
-                            API that uses machine learning to detect the object in an image. I selected the top 5 most probable results to display to the user. 
-                            The image corresponding to the url is also displayed along with the result.
-                        </p>
-                        <p>
-                            Languages: HTML, CSS, JavaScript, React.js
-                        </p>    
-                    </div>  
-                </div>
-                <div class="project">
-                    <h3 id="note-maker-heading">Note Maker<i class="fa-solid fa-angle-down angle-icon nm-icon"></i></h3>
-                    <div id="note-maker-content">
-                        <p>
-                            <img class="right" src="./resources/images/note-maker.jpeg" alt="note-maker interface">
-                            A web application developed in React.js that sends the topic for notes as plain text prompts to OpenAI API and displays the results 
-                            in a list. I implemented a form for entering topic which on submitting displays a log of results in a list, sorted from newest to oldest.
-                        </p>
-                        <p class="last">
-                            Languages: HTML, CSS, JavaScript, React.js
-                        </p>  
-                    </div>    
                 </div>
             </div>
             <div id="experience">
                 <h2 id="exp">Experience</h2>
-                <h3>BGC Engineering</h3>
-                <h4>Web & Mobile QA Tester Co-op</h4>
+                <h3>Science Undergraduate Society (July 2022 - Current)</h3>
+                <h4>Academic Experience Coordinator</h4>
                 <p>
-                    starting September ...
+                    - Work with other coordinators to enhance the academic experience of undergraduate students in the faculty of Science.<br>
+                    - Responsible for organizing faculty wide surveys, tutoring and group-study sessions.
                 </p>
-                <h3>Browns Crafthouse</h3>
+                <h3>Browns Crafthouse (May 2022 - June 2022) </h3>
                 <h4>Prep-Cook and Dishwasher</h4>
                 <p>
-                    Worked in small teams where effective communication is essential. Adapted to a busy work environment where people depend on me to stick to deadlines.
-                    Learnt to deal with unexpected rushes/situations.
+                    - Worked in small teams where effective communication is essential.<br>
+                    - Adapted to a busy work environment where people depend on me to stick to deadlines.<br>
+                    - Learnt to deal with unexpected rushes/situations.
                 </p>
-                <h3>Science Undergraduate Society</h3>
-                <h4>Academic Experience Coordinator</h4>
+                <h3>BGC Engineering (September 2022 - April 2023)</h3>
+                <h4>Web & Mobile QA Tester Co-op</h4>
                 <p class="last">
-                    Work with other coordinators to enhance the academic experience of undergraduate students in the faculty of Science. Responsible for organizing faculty
-                    wide surveys, tutoring and group-study sessions.
+                    ...
                 </p>
             </div>
             <div id="skills">
@@ -163,15 +198,15 @@
                 </p>
                 <p>
                     <span>Web: </span>
-                    HTML, CSS, React.js
+                    HTML, CSS, React.js, Node.js, Express, PostgreSQL
                 </p>
                 <p>
                     <span>Tools: </span>
-                    GitHub, Git, Bootstrap, NPM, GDB, Valgrind, Excel
+                    GitHub, Git, Bootstrap, GDB, Valgrind, pgAdmin, Postman, Postbird
                 </p>
                 <p class="last">
                     <span>Testing: </span>
-                    JUnit, Mocha, Jest
+                    JUnit, Mocha
                 </p>
             </div>
             <div id="contacts">

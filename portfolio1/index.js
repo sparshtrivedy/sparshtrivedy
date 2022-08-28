@@ -4,17 +4,20 @@ const cafekisokHeading = document.getElementById("cafe-kiosk-heading");
 const cafeKioskContent = document.getElementById("cafe-kiosk-content");
 const imagePartitionHeading = document.getElementById("image-partition-heading");
 const imagePartitionContent = document.getElementById("image-partition-content");
-const backgroundGeneratorHeading = document.getElementById("background-generator-heading");
-const backgroundGeneratorContent = document.getElementById("background-generator-content");
+const vibingHeading = document.getElementById("vibing-heading");
+const vibingContent = document.getElementById("vibing-content");
 const imageDetectorHeading = document.getElementById("image-detector-heading");
 const imageDetectorContent = document.getElementById("image-detector-content");
+const personalBudgetHeading = document.getElementById("personal-budget-heading");
+const personalBudgetContent = document.getElementById("personal-budget-content");
 const noteMakerHeading = document.getElementById("note-maker-heading");
 const noteMakerContent = document.getElementById("note-maker-content");
 const cafeKioskIcon = document.getElementsByClassName("ck-icon")[0];
 const imagePartitionIcon = document.getElementsByClassName("ip-icon")[0];
-const backgroundGeneratorIcon = document.getElementsByClassName("bg-icon")[0];
+const vibingIcon = document.getElementsByClassName("vb-icon")[0];
 const imageDetectorIcon = document.getElementsByClassName("id-icon")[0];
 const noteMakerIcon = document.getElementsByClassName("nm-icon")[0];
+const personalBudgetIcon = document.getElementsByClassName("pb-icon")[0];
 const facts = ["I have played Tabla, a classical Indian percussion instrument for over 9 years", "I have a working knowledge of the Sanskrit language",
                 "I enjoy reading mythological books, and have read several regional versions and interpretations of epics like the Mahabharata and Ramayana",
                 "My favourite outing is to local cafes around Vancouver, and trying their Lattes and Cold Brews (iced coffee >> hot coffee)", 
@@ -52,13 +55,13 @@ imagePartitionHeading.addEventListener("click", () => {
     }
 });
 
-backgroundGeneratorHeading.addEventListener("click", () => {
-    if (backgroundGeneratorIcon.className === "fa-solid fa-angle-down angle-icon bg-icon") {
-        backgroundGeneratorContent.style.display = 'block';
-        backgroundGeneratorIcon.className = "fa-solid fa-angle-up angle-icon";
-    } else if (backgroundGeneratorIcon.className === "fa-solid fa-angle-up angle-icon") {
-        backgroundGeneratorContent.style.display = 'none';
-        backgroundGeneratorIcon.className = "fa-solid fa-angle-down angle-icon bg-icon";
+vibingHeading.addEventListener("click", () => {
+    if (vibingIcon.className === "fa-solid fa-angle-down angle-icon vb-icon") {
+        vibingContent.style.display = 'block';
+        vibingIcon.className = "fa-solid fa-angle-up angle-icon";
+    } else if (vibingIcon.className === "fa-solid fa-angle-up angle-icon") {
+        vibingContent.style.display = 'none';
+        vibingIcon.className = "fa-solid fa-angle-down angle-icon vb-icon";
     }
 });
 
@@ -69,6 +72,16 @@ imageDetectorHeading.addEventListener("click", () => {
     } else if (imageDetectorIcon.className === "fa-solid fa-angle-up angle-icon") {
         imageDetectorContent.style.display = 'none';
         imageDetectorIcon.className = "fa-solid fa-angle-down angle-icon id-icon";
+    }
+});
+
+personalBudgetHeading.addEventListener("click", () => {
+    if (personalBudgetIcon.className === "fa-solid fa-angle-down angle-icon pb-icon") {
+        personalBudgetContent.style.display = 'block';
+        personalBudgetIcon.className = "fa-solid fa-angle-up angle-icon";
+    } else if (personalBudgetIcon.className === "fa-solid fa-angle-up angle-icon") {
+        personalBudgetContent.style.display = 'none';
+        personalBudgetIcon.className = "fa-solid fa-angle-down angle-icon pb-icon";
     }
 });
 
