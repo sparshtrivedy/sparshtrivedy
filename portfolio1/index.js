@@ -12,12 +12,24 @@ const personalBudgetHeading = document.getElementById("personal-budget-heading")
 const personalBudgetContent = document.getElementById("personal-budget-content");
 const noteMakerHeading = document.getElementById("note-maker-heading");
 const noteMakerContent = document.getElementById("note-maker-content");
+const attrTableHeading = document.getElementById("attr-table-heading");
+const attrTableContent = document.getElementById("attr-table-content");
+const modalHeading = document.getElementById("modal-heading");
+const modalContent = document.getElementById("modal-content");
+const refactorHeading = document.getElementById("refactor-heading");
+const refactorContent = document.getElementById("refactor-content");
+const enableHeading = document.getElementById("enable-heading");
+const enableContent = document.getElementById("enable-content");
 const cafeKioskIcon = document.getElementsByClassName("ck-icon")[0];
 const imagePartitionIcon = document.getElementsByClassName("ip-icon")[0];
 const vibingIcon = document.getElementsByClassName("vb-icon")[0];
 const imageDetectorIcon = document.getElementsByClassName("id-icon")[0];
 const noteMakerIcon = document.getElementsByClassName("nm-icon")[0];
 const personalBudgetIcon = document.getElementsByClassName("pb-icon")[0];
+const attrTableIcon = document.getElementsByClassName("at-icon")[0];
+const modalIcon = document.getElementsByClassName("m-icon")[0];
+const enableIcon = document.getElementsByClassName("e-icon")[0];
+const refactorIcon = document.getElementsByClassName("r-icon")[0];
 const facts = ["I have played Tabla, a classical Indian percussion instrument for over 9 years", "I have a working knowledge of the Sanskrit language",
                 "I enjoy reading mythological books, and have read several regional versions and interpretations of epics like the Mahabharata and Ramayana",
                 "My favourite outing is to local cafes around Vancouver, and trying their Lattes and Cold Brews (iced coffee >> hot coffee)", 
@@ -92,6 +104,46 @@ noteMakerHeading.addEventListener("click", () => {
     } else if (noteMakerIcon.className === "fa-solid fa-angle-up angle-icon") {
         noteMakerContent.style.display = 'none';
         noteMakerIcon.className = "fa-solid fa-angle-down angle-icon nm-icon";
+    }
+});
+
+attrTableHeading.addEventListener("click", () => {
+    if (attrTableIcon.className === "fa-solid fa-angle-down angle-icon at-icon") {
+        attrTableContent.style.display = 'block';
+        attrTableIcon.className = "fa-solid fa-angle-up angle-icon";
+    } else if (attrTableIcon.className === "fa-solid fa-angle-up angle-icon") {
+        attrTableContent.style.display = 'none';
+        attrTableIcon.className = "fa-solid fa-angle-down angle-icon at-icon";
+    }
+});
+
+modalHeading.addEventListener("click", () => {
+    if (modalIcon.className === "fa-solid fa-angle-down angle-icon m-icon") {
+        modalContent.style.display = 'block';
+        modalIcon.className = "fa-solid fa-angle-up angle-icon";
+    } else if (modalIcon.className === "fa-solid fa-angle-up angle-icon") {
+        modalContent.style.display = 'none';
+        modalIcon.className = "fa-solid fa-angle-down angle-icon m-icon";
+    }
+});
+
+enableHeading.addEventListener("click", () => {
+    if (enableIcon.className === "fa-solid fa-angle-down angle-icon e-icon") {
+        enableContent.style.display = 'block';
+        enableIcon.className = "fa-solid fa-angle-up angle-icon";
+    } else if (enableIcon.className === "fa-solid fa-angle-up angle-icon") {
+        enableContent.style.display = 'none';
+        enableIcon.className = "fa-solid fa-angle-down angle-icon e-icon";
+    }
+});
+
+refactorHeading.addEventListener("click", () => {
+    if (refactorIcon.className === "fa-solid fa-angle-down angle-icon r-icon") {
+        refactorContent.style.display = 'block';
+        refactorIcon.className = "fa-solid fa-angle-up angle-icon";
+    } else if (refactorIcon.className === "fa-solid fa-angle-up angle-icon") {
+        refactorContent.style.display = 'none';
+        refactorIcon.className = "fa-solid fa-angle-down angle-icon r-icon";
     }
 });
 

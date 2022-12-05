@@ -15,22 +15,23 @@
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/428865f274.js" crossorigin="anonymous"></script>
     <!-- Document browser tab title -->
-    <title>My Portfolio</title>
+    <title>Sparsh Trivedy</title>
 </head>
 <body>
     <header>
         <h1>Sparsh Trivedy</h1>
         <ul>
             <li><a href="#about-me">About Me</a></li>
+            <li><a href="#work">Work Experience</a></li>
             <li><a href="#projects">Projects</a></li>
-            <li><a href="#experience">Experience</a></li>
+            <li><a href="#volunteering">Volunteering</a></li>
             <li><a href="#skills">Skills</a></li>
             <li id="last-item"><a href="#contacts">Contact</a></li>
         </ul>
     </header>
     <main>
         <section id="left">
-            <img id="sparsh-pic" src="./resources/images/sparsh.jpeg" alt="sparsh's photo" class="responsive" width="400">
+            <img id="sparsh-pic" src="./resources/images/sparsh.jpeg" alt="sparsh's photo" class="responsive" width="390">
             <button id="fun-fact">Fun Fact</button>
             <p id='more-info'>
                 JavaScript can also handle requests and responses on a website. It's a great language to master for front-end and back-end web 
@@ -45,10 +46,75 @@
                     Software Engineering and Web Development, Front-end Web Development in particular. 
                 </p>
                 <p class="last">
-                    When I am not working, you can find me curled up on the couch reading a book, doing digital sketches or cafe hopping 
+                    When I am not working, you can find me curled up on the couch, reading a book, doing digital sketches or cafe hopping 
                     around Vancouver.
                 </p>
             </div>   
+            <div id="work">
+                <h2>Work Experience</h2>
+                <h3>BGC Engineering (September 2022)</h3>
+                <h4>Web Development Co-op</h4>
+                <p>
+                    I am in the formiTable scrum team and we focus on developing the forms and tables on Cambio, a cloud-hosted software solution that is designed to help engineers take a systematic approach toward managing infrastructure.
+                    <u><a href="https://www.bgcengineering.ca/cambio-landing/">Learn More</a></u>
+                </p>
+                <p>
+                    At BGC, we primarily use .NET(C#) for developing the back-end and React.js(TypeScript) for the front-end. Some of the exciting features I worked on include:
+                </p>
+                <div class="project">
+                    <h3 id="attr-table-heading">Instrument Reading Attribute Table<i class="fa-solid fa-angle-down angle-icon at-icon"></i></h3>
+                    <div id="attr-table-content">
+                        <p>
+                            The Instrument Reading attribute table was created to store data associated with the instrument readings.
+                            <br><br>
+                            This involved creating GET and POST end-points to fetch and update the table as instruments were added, updated and removed from the table. 
+                            Linq queries were used to filter the readings based on the client viewing the data and to query data from tables in differnet databases.
+                            <br><br>
+                            Quick actions were added to zoom to the instrument locations, view/edit the detailed readings through the form, filter the table based on the 
+                            columns and download the readings selected as PDFs.
+                            <br><br>
+                            Data seeding for the table was performed using Entity Framework migrations.
+                        </p>
+                    </div>
+                </div>
+                <div class="project">
+                    <h3 id="modal-heading">Add New Instrument Modal Popup<i class="fa-solid fa-angle-down angle-icon m-icon"></i></h3>
+                    <div id="modal-content">
+                        <p>
+                            This is a modal popup for when a user wants to add new Instruments to an Instrument Location. 
+                            The user here has the option to either manually fill in all data through the form, or they can even copy over data
+                            from a previously created Instrument at the same location.
+                            <br><br>
+                            I primarily worked on the front-end for this modal, along with end-points to filter the option dropdowns by the keywords typed into the field.
+                            <br><br>
+                            I also collaborated with another co-op to create the copy service logic for this modal, for which we also wrote unit tests in xUnit.
+                        </p>    
+                    </div>
+                </div>
+                <div class="project">
+                    <h3 id="enable-heading">Enabling Instrument Module<i class="fa-solid fa-angle-down angle-icon e-icon"></i></h3>
+                    <div id="enable-content">
+                        <p>
+                            We had been working on developing a new Instrumentation Module for our clients.
+                            We had been developing this on a demo client and when all the features were ready to go, I was tasked with enabling it for 5 of our clients.
+                        </p>
+                        <p>
+                            This involved running a tool created by our team lead, to associate all our instruments with a new Instrument Location, based on their coordinates.
+                            A new Instrument Location layer was then enabled for these 5 clients through SQL scripts. Data seeding was done through EF migrations, to enable the
+                            tables and forms for these clients.
+                        </p>
+                    </div>    
+                </div>
+                <div class="project">
+                    <h3 id="refactor-heading">Refactoring Enum Controller<i class="fa-solid fa-angle-down angle-icon r-icon"></i></h3>
+                    <div id="refactor-content">
+                        <p class="last">
+                            Our Instrumentation Enums Controller had a separate end-point for each of the enums, and there were a lot!
+                            I updated our controller to have one generic end-point for all our enums. This dramatically reduced the size of our controller and also
+                            saved a lot of time for devs creating new enums, since they no longer have to create a new end-point for every enum.
+                        </p> 
+                    </div>  
+                </div>
             <div id="projects">
                 <h2>Projects</h2>
                 <div class="project">
@@ -169,44 +235,36 @@
                     </div>
                 </div>
             </div>
-            <div id="experience">
-                <h2 id="exp">Experience</h2>
-                <h3>Science Undergraduate Society (July 2022 - Current)</h3>
+            <div id="volunteering">
+                <h2 id="exp">Volunteer Experience</h2>
+                <h3>Science Undergraduate Society (July 2022)</h3>
                 <h4>Academic Experience Coordinator</h4>
                 <p>
                     - Work with other coordinators to enhance the academic experience of undergraduate students in the faculty of Science.<br>
                     - Responsible for organizing faculty wide surveys, tutoring and group-study sessions.
-                </p>
-                <h3>Browns Crafthouse (May 2022 - June 2022) </h3>
-                <h4>Prep-Cook and Dishwasher</h4>
-                <p>
-                    - Worked in small teams where effective communication is essential.<br>
-                    - Adapted to a busy work environment where people depend on me to stick to deadlines.<br>
-                    - Learnt to deal with unexpected rushes/situations.
-                </p>
-                <h3>BGC Engineering (September 2022 - Apr 2023)</h3>
-                <h4>Web Development Co-op</h4>
-                <p class="last">
-                    ...
                 </p>
             </div>
             <div id="skills">
                 <h2>Skills</h2>
                 <p>
                     <span>Programming: </span>
-                    Java, C++, C, JavaScript, SQL, Python, R
+                    Java, C++, C, C#, JavaScript, TypeScript, SQL, Python, R
                 </p>
                 <p>
-                    <span>Web: </span>
-                    HTML, CSS, React.js, Node.js, Express, PostgreSQL
+                    <span>Front-End: </span>
+                    HTML, CSS, React.js
+                </p>
+                <p>
+                    <span>Back-End: </span>
+                    Node, Express.js, PostgreSQL, .NET, Entity Framework
                 </p>
                 <p>
                     <span>Tools: </span>
-                    GitHub, Git, Bootstrap, GDB, Valgrind, pgAdmin, Postman, Postbird
+                    Git, Bootstrap, pgAdmin, Postman, Postbird, Azure Data Studio, Docker, Swagger
                 </p>
                 <p class="last">
                     <span>Testing: </span>
-                    JUnit, Mocha
+                    JUnit, Mocha, Jest, xUnit
                 </p>
             </div>
             <div id="contacts">

@@ -56,23 +56,23 @@ header {
     align-items: center;
     color: #F3F3F5;
     background-color: #0A0D1C;
-    padding: 20px;
+    padding: 16px;
     border-bottom: 1px solid #F3F3F5;
     z-index: 5;
 }
 
 h1 {
-    font-size: 32px;
+    font-size: 20px;
 }
 
 h2 {
-    font-size: 28px;
+    font-size: 20px;
     padding-bottom: 10px;
     border-bottom: 1px solid #F3F3F5;
 }
 
 h3 {
-    font-size: 24px;
+    font-size: 18px;
     padding-top: 30px;
     padding-left: 60px;
     padding-bottom: 20px;
@@ -85,7 +85,7 @@ h4 {
 
 p {
     padding: 30px 60px 0 60px;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 1.5em;
     word-spacing: 0.25em;
 }
@@ -97,7 +97,7 @@ p {
 li {
     display: inline;
     padding-right: 20px;
-    font-size: 20px;
+    font-size: 16px;
 }
 
 a {
@@ -111,7 +111,7 @@ a:hover {
 }
 
 span {
-    font-size: 24px;
+    font-size: 18px;
     padding-right: 10px;
 }
 
@@ -125,7 +125,7 @@ span {
 
 figcaption {
     font-family: 'Lato', sans-serif;
-    font-size: 18px;
+    font-size: 14px;
     padding-left: 60px;
     padding-top: 10px;
 }
@@ -136,7 +136,7 @@ figcaption {
 }
 
 .icon {
-    font-size: 40px;
+    font-size: 30px;
 }
 
 .icon:hover {
@@ -174,8 +174,8 @@ main {
     height: 100%;
     background-color: #1D2340;
     justify-content: center;
-    margin-top: 80px;
-    overflow: scroll;
+    overflow: auto;
+    overflow-x: hidden;
 }
 
 #last-item {
@@ -184,20 +184,21 @@ main {
 
 #sparsh-pic {
     height: 500px;
-    margin-top: 25px;
+    margin-top: 110px;
     border-radius: 7px;
     border: solid #FFD300 1px;
 }
 
 button {
-    height: 50px;
-    width: 150px;
+    margin-top: 80px;
+    height: 40px;
+    width: 120px;
     background-color: #FFD300;
     border: 1px solid #FFD300;
     border-radius: 7px;
     transition: none;
     color: #0A0D1C;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 900;
     font-family: 'Lato', sans-serif;
 }
@@ -248,20 +249,45 @@ button:hover {
     text-align: center;
 }
 
-#cafe-kiosk-heading, #image-partition-heading, #vibing-heading, #image-detector-heading, #note-maker-heading, #personal-budget-heading {
+@media (max-width: 1026px) {
+    #left {
+        width: 100%;
+        height: 500px;
+    }
+    
+    #right {
+        margin-top: 500px;
+        grid-column: 1 / span 5;
+    }
+
+    #sparsh-pic {
+        width: 210px;
+        height: 290px;
+    }
+
+    #fun-fact {
+        top: 350px;
+    }
+
+    #more-info {
+        top: 300px;
+    }
+}
+
+#cafe-kiosk-heading, #image-partition-heading, #vibing-heading, #image-detector-heading, #note-maker-heading, #personal-budget-heading, #attr-table-heading, #modal-heading, #enable-heading, #refactor-heading {
     cursor: pointer;
 }
 
-#cafe-kiosk-heading:hover, #image-partition-heading:hover, #vibing-heading:hover, #image-detector-heading:hover, #note-maker-heading:hover, #personal-budget-heading:hover {
+#cafe-kiosk-heading:hover, #image-partition-heading:hover, #vibing-heading:hover, #image-detector-heading:hover, #note-maker-heading:hover, #personal-budget-heading:hover, #attr-table-heading:hover, #modal-heading:hover, #enable-heading:hover, #refactor-heading:hover  {
     color: #FFD300;
 }
 
-#cafe-kiosk-content, #image-partition-content, #vibing-content, #image-detector-content, #note-maker-content, #personal-budget-content {
+#cafe-kiosk-content, #image-partition-content, #vibing-content, #image-detector-content, #note-maker-content, #personal-budget-content, #attr-table-content, #modal-content, #enable-content, #refactor-content  {
     display: none;
 }
 
 .angle-icon {
-    padding-left: 20px;
+    padding-left: 16px;
 }
 
 #exp {
