@@ -187,6 +187,7 @@ main {
     margin-top: 110px;
     border-radius: 7px;
     border: solid #FFD300 1px;
+    align-self: center;
 }
 
 button {
@@ -211,7 +212,8 @@ button:hover {
 
 #fun-fact {
     position: absolute;
-    top: 550px;
+    align-self: center;
+    margin-top: 670px;
 }
 
 .download {
@@ -252,25 +254,29 @@ button:hover {
 @media (max-width: 1026px) {
     #left {
         width: 100%;
-        height: 500px;
+        height: 430px;
+        border-bottom: #DBDCE0 1px solid;
     }
     
     #right {
-        margin-top: 500px;
+        margin-top: 420px;
         grid-column: 1 / span 5;
     }
 
     #sparsh-pic {
+        margin-top: 90px;
         width: 210px;
-        height: 290px;
+        height: 280px;
+        align-self: auto;
     }
 
     #fun-fact {
-        top: 350px;
+        align-self: center;
+        margin-top: 370px;
     }
 
     #more-info {
-        top: 300px;
+        top: 250px;
     }
 }
 
