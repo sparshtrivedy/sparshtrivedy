@@ -68,7 +68,8 @@ h1 {
 h2 {
     font-size: 20px;
     padding-bottom: 10px;
-    border-bottom: 1px solid #F3F3F5;
+    border-bottom: 1px solid #b2c2bf;
+    color: #b2c2bf;
 }
 
 h3 {
@@ -76,6 +77,10 @@ h3 {
     padding-top: 30px;
     padding-left: 60px;
     padding-bottom: 20px;
+}
+
+.dropdown {
+    color: #8d9db6;
 }
 
 h4 {
@@ -121,6 +126,11 @@ span {
     margin-top: 10px;
     border-radius: 7px;
     border: solid #FFD300 1px;
+    transition: width 1s;
+}
+
+.proj-pic:hover {
+    width: 500px;
 }
 
 figcaption {
@@ -280,15 +290,15 @@ button:hover {
     }
 }
 
-#cafe-kiosk-heading, #image-partition-heading, #vibing-heading, #image-detector-heading, #note-maker-heading, #personal-budget-heading, #attr-table-heading, #modal-heading, #enable-heading, #refactor-heading {
+#wood-works-heading, #cafe-kiosk-heading, #image-partition-heading, #vibing-heading, #image-detector-heading, #note-maker-heading, #personal-budget-heading, #attr-table-heading, #modal-heading, #enable-heading, #refactor-heading {
     cursor: pointer;
 }
 
-#cafe-kiosk-heading:hover, #image-partition-heading:hover, #vibing-heading:hover, #image-detector-heading:hover, #note-maker-heading:hover, #personal-budget-heading:hover, #attr-table-heading:hover, #modal-heading:hover, #enable-heading:hover, #refactor-heading:hover  {
+#wood-works-heading:hover, #cafe-kiosk-heading:hover, #image-partition-heading:hover, #vibing-heading:hover, #image-detector-heading:hover, #note-maker-heading:hover, #personal-budget-heading:hover, #attr-table-heading:hover, #modal-heading:hover, #enable-heading:hover, #refactor-heading:hover  {
     color: #FFD300;
 }
 
-#cafe-kiosk-content, #image-partition-content, #vibing-content, #image-detector-content, #note-maker-content, #personal-budget-content, #attr-table-content, #modal-content, #enable-content, #refactor-content  {
+#wood-works-content, #cafe-kiosk-content, #image-partition-content, #vibing-content, #image-detector-content, #note-maker-content, #personal-budget-content, #attr-table-content, #modal-content, #enable-content, #refactor-content  {
     display: none;
 }
 

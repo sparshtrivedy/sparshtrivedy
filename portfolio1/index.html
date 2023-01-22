@@ -26,6 +26,7 @@
             <li><a href="#projects">Projects</a></li>
             <li><a href="#volunteering">Volunteering</a></li>
             <li><a href="#skills">Skills</a></li>
+            <li><a href="#education">Education</a></li>
             <li id="last-item"><a href="#contacts">Contact</a></li>
         </ul>
     </header>
@@ -52,23 +53,23 @@
             </div>   
             <div id="work">
                 <h2>Work Experience</h2>
-                <h3>BGC Engineering (September 2022)</h3>
-                <h4>Web Development Co-op</h4>
+                <h3 style="color: #c2d4dd">BGC Engineering (September 2022)</h3>
+                <h4 style="color: #c2d4dd">Web Development Co-op</h4>
                 <p>
                     I am in the formiTable scrum team and we focus on developing the forms and tables on Cambio, a cloud-hosted software solution that is designed to help engineers take a systematic approach toward managing infrastructure.
-                    <u><a href="https://www.bgcengineering.ca/cambio-landing/">Learn More</a></u>
+                    <u><a href="https://www.bgcengineering.ca/cambio-landing/" style="color: #b2c2bf">Learn More</a></u>
                 </p>
                 <p>
                     At BGC, we primarily use .NET(C#) for developing the back-end and React.js(TypeScript) for the front-end. Some of the exciting features I worked on include:
                 </p>
                 <div class="project">
-                    <h3 id="attr-table-heading">Instrument Reading Attribute Table<i class="fa-solid fa-angle-down angle-icon at-icon"></i></h3>
+                    <h3 id="attr-table-heading" class="dropdown">Instrument Reading Attribute Table<i class="fa-solid fa-angle-down angle-icon at-icon"></i></h3>
                     <div id="attr-table-content">
                         <p>
                             The Instrument Reading attribute table was created to store data associated with the instrument readings.
                             <br><br>
-                            This involved creating GET and POST end-points to fetch and update the table as instruments were added, updated and removed from the table. 
-                            Linq queries were used to filter the readings based on the client viewing the data and to query data from tables in differnet databases.
+                            This involved creating a DB view, joining multiple tables to grab all the data required for the attribute table. A data model was also created for the view. GET and POST API end-points were created to fetch and 
+                            update the table as readings were added, updated and removed from the table. Linq queries were used to filter the readings based on the client viewing the data.
                             <br><br>
                             Quick actions were added to zoom to the instrument locations, view/edit the detailed readings through the form, filter the table based on the 
                             columns and download the readings selected as PDFs.
@@ -78,21 +79,23 @@
                     </div>
                 </div>
                 <div class="project">
-                    <h3 id="modal-heading">Add New Instrument Modal Popup<i class="fa-solid fa-angle-down angle-icon m-icon"></i></h3>
+                    <h3 id="modal-heading" class="dropdown">Add New Inspection Modal Popup<i class="fa-solid fa-angle-down angle-icon m-icon"></i></h3>
                     <div id="modal-content">
                         <p>
-                            This is a modal popup for when a user wants to add new Instruments to an Instrument Location. 
-                            The user here has the option to either manually fill in all data through the form, or they can even copy over data
-                            from a previously created Instrument at the same location.
+                            This is a modal popup for when a user wants to add new inspections to a strain feature. 
+                            The user here has the option to either manually fill in all data through the form, or they can copy over data
+                            from a previously created inspection at the same or different strain feature.
                             <br><br>
-                            I primarily worked on the front-end for this modal, along with end-points to filter the option dropdowns by the keywords typed into the field.
-                            <br><br>
-                            I also collaborated with another co-op to create the copy service logic for this modal, for which we also wrote unit tests in xUnit.
+                            The modal has a checkbox a user can check if they want to copy data from another inspection. An end-point was implemented to copy over
+                            the data from the source inspection to the target inspection. The modal has dropdowns for the target and source strain
+                            features, which users can filter by keyword. This functionality was added with the help of an end-point to filter the
+                            strain features by keyword. The modal also has a list of inspections that a user can copy data from. This list is populated 
+                            based on the source strain feature selected by the user.
                         </p>    
                     </div>
                 </div>
                 <div class="project">
-                    <h3 id="enable-heading">Enabling Instrument Module<i class="fa-solid fa-angle-down angle-icon e-icon"></i></h3>
+                    <h3 id="enable-heading" class="dropdown">Enabling Instrument Module<i class="fa-solid fa-angle-down angle-icon e-icon"></i></h3>
                     <div id="enable-content">
                         <p>
                             We had been working on developing a new Instrumentation Module for our clients.
@@ -106,7 +109,7 @@
                     </div>    
                 </div>
                 <div class="project">
-                    <h3 id="refactor-heading">Refactoring Enum Controller<i class="fa-solid fa-angle-down angle-icon r-icon"></i></h3>
+                    <h3 id="refactor-heading" class="dropdown">Refactoring Enum Controller<i class="fa-solid fa-angle-down angle-icon r-icon"></i></h3>
                     <div id="refactor-content">
                         <p class="last">
                             Our Instrumentation Enums Controller had a separate end-point for each of the enums, and there were a lot!
@@ -118,7 +121,32 @@
             <div id="projects">
                 <h2>Projects</h2>
                 <div class="project">
-                    <h3 id="personal-budget-heading">Personal Budget API<i class="fa-solid fa-angle-down angle-icon pb-icon"></i></h3>
+                    <h3 id="wood-works-heading" class="dropdown">WoodWorks<i class="fa-solid fa-angle-down angle-icon ww-icon"></i></h3>
+                    <div id="wood-works-content">
+                        <p>January 2023</p>
+                        <p>
+                            WoodWorks is a full-stack web application implemented in TypeScript, React and Redux on the front-end and C# and .NET on the back-end. 
+                            <br><br>
+                            This is an e-commerce web application with a products catalog where users can view the product details, add products to the cart and 
+                            update the quantity of these products in the cart. The DB schema has been set-up using the code first approach of Entity Framework and 
+                            the data seeding for the DB tables was done using EF migrations. An REST API controller was set-up with CRUD end-points for fetching products,
+                            fetching basket items, updating basket items and deleting basket items. The back-end functionality has been supported by front-end functionality
+                            implemented with the help of TypeScript, React and Redux.
+                            <br><br>
+                            Next steps: This application is still a work in progress and the next steps include adding checkout, login and registration features.
+                        </p>
+                        <p>
+                            Languages: TypeScript, C#, React, .NET, Redux
+                        </p> 
+                        <div id="figures">
+                            <figure>
+                                <img class="proj-pic" src="./resources/images/wood-works.png" alt="wood works image">
+                            </figure>
+                        </div>
+                    </div>      
+                </div>
+                <div class="project">
+                    <h3 id="personal-budget-heading" class="dropdown">Personal Budget API<i class="fa-solid fa-angle-down angle-icon pb-icon"></i></h3>
                     <div id="personal-budget-content">
                         <p>August 2022</p>
                         <p>
@@ -140,11 +168,10 @@
                     </div>    
                 </div>
                 <div class="project">
-                    <h3 id="vibing-heading">Vibing<i class="fa-solid fa-angle-down angle-icon vb-icon"></i></h3>
+                    <h3 id="vibing-heading" class="dropdown">Vibing<i class="fa-solid fa-angle-down angle-icon vb-icon"></i></h3>
                     <div id="vibing-content">
                         <p>July 2022</p>
                         <p>
-                            <img class="right" src="./resources/images/vibing.jpg" alt="vibing interface">
                             This is a front-end application that allows a user to browse songs, add them to a playlist and save it to Spotify. this
                             functionality was made possible using the Spotify API.
                             <br><br>
@@ -154,29 +181,35 @@
                         </p>
                         <p>
                             Languages: HTML, CSS, JavaScript, React.js
-                        </p>      
+                        </p> 
+                        <div id="figures">
+                            <figure>
+                                <img class="proj-pic" src="./resources/images/vibing.jpg" alt="vibing interface">
+                            </figure>
+                        </div>     
                     </div>
                 </div>
                 <div class="project">
-                    <h3 id="note-maker-heading">Note Maker<i class="fa-solid fa-angle-down angle-icon nm-icon"></i></h3>
+                    <h3 id="note-maker-heading" class="dropdown">Note Maker<i class="fa-solid fa-angle-down angle-icon nm-icon"></i></h3>
                     <div id="note-maker-content">
                         <p>May 2022</p>
                         <p>
-                            <img class="right" src="./resources/images/note-maker.jpeg" alt="note-maker interface">
                             This is a front-end application, implemented in React.js, that sends the topic for notes as plain text prompts to OpenAI API and displays the results 
                             in a list. The user is able to enter the topic in a form, which on submitting displays a log of results in a list, sorted from newest to oldest.
                         </p>
                         <p class="last">
                             Languages: HTML, CSS, JavaScript, React.js
                         </p>  
+                        <figure>
+                            <img class="proj-pic" src="./resources/images/note-maker.jpeg" alt="note-maker interface">
+                        </figure>
                     </div>    
                 </div>
                 <div class="project">
-                    <h3 id="image-detector-heading">Image Detector<i class="fa-solid fa-angle-down angle-icon id-icon"></i></h3>
+                    <h3 id="image-detector-heading" class="dropdown">Image Detector<i class="fa-solid fa-angle-down angle-icon id-icon"></i></h3>
                     <div id="image-detector-content">
                         <p>April 2022</p>
                         <p>
-                            <img class="right" src="./resources/images/detect.png" alt="image detector interface">
                             This is a front-end application that allows its users to enter an image url and detects the objects in that image. This behaviour
                             was implemented using the Clarifai-API, that uses machine learning to detect the objects in an image. The application displays the 
                             5 most probable results to the user, along with the image corresponding to the url entered by the user.
@@ -184,10 +217,13 @@
                         <p>
                             Languages: HTML, CSS, JavaScript, React.js
                         </p>    
+                        <figure>
+                            <img class="proj-pic" src="./resources/images/detect.png" alt="image detector interface">
+                        </figure>
                     </div>  
                 </div>
                 <div class="project">
-                    <h3 id="image-partition-heading">Image Partitioning Trees<i class="fa-solid fa-angle-down angle-icon ip-icon"></i></h3>
+                    <h3 id="image-partition-heading" class="dropdown">Image Partitioning Trees<i class="fa-solid fa-angle-down angle-icon ip-icon"></i></h3>
                     <div id="image-partition-content">
                         <p>March 2022</p>
                         <p>
@@ -216,11 +252,10 @@
                     </div>      
                 </div>
                 <div class="project">
-                    <h3 id="cafe-kiosk-heading">Cafe Kiosk<i class="fa-solid fa-angle-down angle-icon ck-icon"></i></h3>
+                    <h3 id="cafe-kiosk-heading" class="dropdown">Cafe Kiosk<i class="fa-solid fa-angle-down angle-icon ck-icon"></i></h3>
                     <div id="cafe-kiosk-content">
                         <p>December 2021</p>
                         <p>
-                            <img class="right" src="./resources/images/cafe-kiosk.jpg" alt="cafe-kiosk interface">
                             This is an interactive coffee ordering application, implemented in Java, that allows a user to add/remove drinks 
                             from the shopping cart, view order summary, generate bill and place an order. 
                             <br><br> 
@@ -232,25 +267,28 @@
                         <p>
                             Languages: Java
                         </p>
+                        <figure>
+                            <img class="proj-pic" src="./resources/images/cafe-kiosk.jpg" alt="cafe-kiosk interface">
+                        </figure>
                     </div>
                 </div>
             </div>
             <div id="volunteering">
                 <h2 id="exp">Volunteer Experience</h2>
-                <h3>Science Undergraduate Society (July 2022)</h3>
-                <h4>Academic Experience Coordinator</h4>
+                <h3 style="color: #c2d4dd">Science Undergraduate Society (July 2022)</h3>
+                <h4 style="color: #c2d4dd">Academic Experience Coordinator</h4>
                 <p>
                     - Work with other coordinators to enhance the academic experience of undergraduate students in the faculty of Science.<br>
                     - Responsible for organizing faculty wide surveys, tutoring and group-study sessions.
                 </p>
-                <h3>UBC Rover Design Team (September 2022)</h3>
-                <h4>Software Team Member</h4>
+                <h3 style="color: #c2d4dd">UBC Rover Design Team (September 2022)</h3>
+                <h4 style="color: #c2d4dd">Software Team Member</h4>
                 <p>
                     - Our team works with ROS C++ to program our rover that competes with rovers from Universities across the world<br>
                     - I am currently working on developing the GUI for launching the rover and displaying diagnostic data, suing the ROS Qt library.
                 </p>
-                <h3>UBC Design League (September 2022)</h3>
-                <h4>Web Designer</h4>
+                <h3 style="color: #c2d4dd">UBC Design League (September 2022)</h3>
+                <h4 style="color: #c2d4dd">Web Designer</h4>
                 <p class="last">
                     - Our team organizes CAD Designathons for UBC students and holds CAD workshops to help out with the same<br>
                     - I am responsible for revamping our website and keeeping it updated
@@ -259,26 +297,36 @@
             <div id="skills">
                 <h2>Skills</h2>
                 <p>
-                    <span>Programming: </span>
+                    <span style="color: #c2d4dd">Programming: </span>
                     Java, C++, C, C#, JavaScript, TypeScript, SQL, Python, R
                 </p>
                 <p>
-                    <span>Front-End: </span>
-                    HTML, CSS, React.js
+                    <span style="color: #c2d4dd">Front-End: </span>
+                    HTML, CSS, React.js, Redux
                 </p>
                 <p>
-                    <span>Back-End: </span>
+                    <span style="color: #c2d4dd">Back-End: </span>
                     Node, Express.js, PostgreSQL, .NET, Entity Framework
                 </p>
                 <p>
-                    <span>Tools: </span>
+                    <span style="color: #c2d4dd">Tools: </span>
                     Git, Bootstrap, pgAdmin, Postman, Postbird, Azure Data Studio, Docker, Swagger
                 </p>
                 <p class="last">
-                    <span>Testing: </span>
+                    <span style="color: #c2d4dd">Testing: </span>
                     JUnit, Mocha, Jest, xUnit
                 </p>
             </div>
+            <div id="education">
+                <h2>Education</h2>
+                <h3 style="color: #c2d4dd">University of British Columbia (2020 - current)</h3>
+                <h4 style="color: #c2d4dd">3rd year Computer Science major</h4>
+                <p class="last">
+                    - Cumulative average: 83.8%<br>
+                    - Outstanding International Student (OIS) award
+                </p>
+            </div>
+
             <div id="contacts">
                 <h2>Contact</h2>
                 <p>Have a project in mind? want to chat? I'd love to hear from you!</p>
@@ -299,7 +347,7 @@
                         <i class="fa-solid fa-envelope icon"></i>
                     </a>
                 </p>
-                <a href="./resources/Sparsh_Trivedy_Resume.pdf" target="_blank"><button id="resume"> Resume <i class="fa-solid fa-download download"></i></button></a>
+                <a href="./resources/Sparsh_Trivedy_Resume_Coop.pdf" target="_blank"><button id="resume"> Resume <i class="fa-solid fa-download download"></i></button></a>
             </div>
         </section>
     </main>

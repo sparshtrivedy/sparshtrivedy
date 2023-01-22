@@ -1,5 +1,7 @@
 const button = document.querySelector("button");
 const para = document.getElementById("more-info");
+const woodWorksHeading = document.getElementById("wood-works-heading");
+const woodWorksContent = document.getElementById("wood-works-content");
 const cafekisokHeading = document.getElementById("cafe-kiosk-heading");
 const cafeKioskContent = document.getElementById("cafe-kiosk-content");
 const imagePartitionHeading = document.getElementById("image-partition-heading");
@@ -20,6 +22,7 @@ const refactorHeading = document.getElementById("refactor-heading");
 const refactorContent = document.getElementById("refactor-content");
 const enableHeading = document.getElementById("enable-heading");
 const enableContent = document.getElementById("enable-content");
+const woodWorksIcon = document.getElementsByClassName("ww-icon")[0];
 const cafeKioskIcon = document.getElementsByClassName("ck-icon")[0];
 const imagePartitionIcon = document.getElementsByClassName("ip-icon")[0];
 const vibingIcon = document.getElementsByClassName("vb-icon")[0];
@@ -46,6 +49,16 @@ const funFactDisplay = () => {
         button.innerHTML = 'Fun Fact';
     }
 }
+
+woodWorksHeading.addEventListener("click", () => {
+    if (woodWorksIcon.className === "fa-solid fa-angle-down angle-icon ww-icon") {
+        woodWorksContent.style.display = 'block';
+        woodWorksIcon.className = "fa-solid fa-angle-up angle-icon";
+    } else if (woodWorksIcon.className === "fa-solid fa-angle-up angle-icon") {
+        woodWorksContent.style.display = 'none';
+        woodWorksIcon.className = "fa-solid fa-angle-down angle-icon ww-icon";
+    }
+});
 
 cafekisokHeading.addEventListener("click", () => {
     if (cafeKioskIcon.className === "fa-solid fa-angle-down angle-icon ck-icon") {
