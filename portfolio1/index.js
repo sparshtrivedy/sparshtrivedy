@@ -1,5 +1,7 @@
 const button = document.querySelector("button");
 const para = document.getElementById("more-info");
+const overlay = document.getElementsByClassName("overlay")[0];
+const overlaid = document.getElementsByClassName("overlaid")[0];
 const woodWorksHeading = document.getElementById("wood-works-heading");
 const woodWorksContent = document.getElementById("wood-works-content");
 const cafekisokHeading = document.getElementById("cafe-kiosk-heading");
@@ -49,6 +51,7 @@ const funFactDisplay = () => {
         button.innerHTML = 'Fun Fact';
     }
 }
+
 
 woodWorksHeading.addEventListener("click", () => {
     if (woodWorksIcon.className === "fa-solid fa-angle-down angle-icon ww-icon") {
