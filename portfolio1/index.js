@@ -1,4 +1,4 @@
-const button = document.querySelector("button");
+const button = document.getElementById("fun-fact");
 const para = document.getElementById("more-info");
 const overlay = document.getElementsByClassName("overlay")[0];
 const overlaid = document.getElementsByClassName("overlaid")[0];
@@ -51,7 +51,6 @@ const funFactDisplay = () => {
         button.innerHTML = 'Fun Fact';
     }
 }
-
 
 woodWorksHeading.addEventListener("click", () => {
     if (woodWorksIcon.className === "fa-solid fa-angle-down angle-icon ww-icon") {
@@ -123,44 +122,5 @@ noteMakerHeading.addEventListener("click", () => {
     }
 });
 
-attrTableHeading.addEventListener("click", () => {
-    if (attrTableIcon.className === "fa-solid fa-angle-down angle-icon at-icon") {
-        attrTableContent.style.display = 'block';
-        attrTableIcon.className = "fa-solid fa-angle-up angle-icon";
-    } else if (attrTableIcon.className === "fa-solid fa-angle-up angle-icon") {
-        attrTableContent.style.display = 'none';
-        attrTableIcon.className = "fa-solid fa-angle-down angle-icon at-icon";
-    }
-});
-
-modalHeading.addEventListener("click", () => {
-    if (modalIcon.className === "fa-solid fa-angle-down angle-icon m-icon") {
-        modalContent.style.display = 'block';
-        modalIcon.className = "fa-solid fa-angle-up angle-icon";
-    } else if (modalIcon.className === "fa-solid fa-angle-up angle-icon") {
-        modalContent.style.display = 'none';
-        modalIcon.className = "fa-solid fa-angle-down angle-icon m-icon";
-    }
-});
-
-enableHeading.addEventListener("click", () => {
-    if (enableIcon.className === "fa-solid fa-angle-down angle-icon e-icon") {
-        enableContent.style.display = 'block';
-        enableIcon.className = "fa-solid fa-angle-up angle-icon";
-    } else if (enableIcon.className === "fa-solid fa-angle-up angle-icon") {
-        enableContent.style.display = 'none';
-        enableIcon.className = "fa-solid fa-angle-down angle-icon e-icon";
-    }
-});
-
-refactorHeading.addEventListener("click", () => {
-    if (refactorIcon.className === "fa-solid fa-angle-down angle-icon r-icon") {
-        refactorContent.style.display = 'block';
-        refactorIcon.className = "fa-solid fa-angle-up angle-icon";
-    } else if (refactorIcon.className === "fa-solid fa-angle-up angle-icon") {
-        refactorContent.style.display = 'none';
-        refactorIcon.className = "fa-solid fa-angle-down angle-icon r-icon";
-    }
-});
 
 button.addEventListener("click", funFactDisplay);

@@ -53,71 +53,18 @@
             </div>   
             <div id="work">
                 <h2>Work Experience</h2>
-                <h3 style="color: #c2d4dd">BGC Engineering (September 2022)</h3>
-                <h4 style="color: #c2d4dd">Web Development Co-op</h4>
-                <p>
-                    I am in the formiTable scrum team and we focus on developing the forms and tables on Cambio, a cloud-hosted software solution that is designed to help engineers take a systematic approach toward managing infrastructure.
-                    <u><a href="https://www.bgcengineering.ca/cambio-landing/" style="color: #FFD300">Learn More</a></u>
+                <h3 style="color: #8d9db6">BGC Engineering (September 2022)</h3>
+                <h4 style="color: #8d9db6">Web Development Co-op</h4>
+                <p class="last">
+                    - Develop full-stack features using TypeScript, React.js, Redux, SQL, .NET and Entity Framework.<br/>
+                    - Work in an <span class="green">Agile Scrum</span> environment and participate in daily stand-ups, sprint planning, retrospectives, and demos.<br/>
+                    - Implemented a modal dialogue that allows users to copy data from existing inspections into a form when adding new inspections, saving them a lot of time spent copy-pasting the same data repeatedly.<br/>
+                    - Created a searchable dropdown component that allows users to filter through all the users from their organization. This component is used across all our forms, improving the overall user experience.<br/>
+                    - Developed an attribute table to store and organize all instrumentation data, accompanied by <span class="green">REST API</span> endpoints to fetch data based on client, making the data more accessible to clients.<br/>
+                    - Refactored and optimized our enums API controller, condensing the individual endpoints into one generic endpoint for all the enums, reducing our file size and making it easier to understand.<br/>
+                    - Added tags to our attachment manager allowing users to add new and re-use existing tags to categorize and organize their attachments, making them more identifiable.<br/>
+                    - <span class="green">Collaborate with product owners, engineers, QA, and design teams</span> to gather requirements, prioritize tasks, and deliver high quality software within the sprint timeline.<br/>
                 </p>
-                <p>
-                    At BGC, we primarily use .NET(C#) for developing the back-end and React.js(TypeScript) for the front-end. Some of the exciting features I worked on include:
-                </p>
-                <div class="project">
-                    <h3 id="attr-table-heading" class="dropdown">Instrument Reading Attribute Table<i class="fa-solid fa-angle-down angle-icon at-icon"></i></h3>
-                    <div id="attr-table-content">
-                        <p>
-                            The Instrument Reading attribute table was created to store data associated with the instrument readings.
-                            <br><br>
-                            This involved creating a DB view, joining multiple tables to grab all the data required for the attribute table. A data model was also created for the view. GET and POST API end-points were created to fetch and 
-                            update the table as readings were added, updated and removed from the table. Linq queries were used to filter the readings based on the client viewing the data.
-                            <br><br>
-                            Quick actions were added to zoom to the instrument locations, view/edit the detailed readings through the form, filter the table based on the 
-                            columns and download the readings selected as PDFs.
-                            <br><br>
-                            Data seeding for the table was performed using Entity Framework migrations.
-                        </p>
-                    </div>
-                </div>
-                <div class="project">
-                    <h3 id="modal-heading" class="dropdown">Add New Inspection Modal Popup<i class="fa-solid fa-angle-down angle-icon m-icon"></i></h3>
-                    <div id="modal-content">
-                        <p>
-                            This is a modal popup for when a user wants to add new inspections to a strain feature. 
-                            The user here has the option to either manually fill in all data through the form, or they can copy over data
-                            from a previously created inspection at the same or different strain feature.
-                            <br><br>
-                            The modal has a checkbox a user can check if they want to copy data from another inspection. An end-point was implemented to copy over
-                            the data from the source inspection to the target inspection. The modal has dropdowns for the target and source strain
-                            features, which users can filter by keyword. This functionality was added with the help of an end-point to filter the
-                            strain features by keyword. The modal also has a list of inspections that a user can copy data from. This list is populated 
-                            based on the source strain feature selected by the user.
-                        </p>    
-                    </div>
-                </div>
-                <div class="project">
-                    <h3 id="enable-heading" class="dropdown">Enabling Instrument Module<i class="fa-solid fa-angle-down angle-icon e-icon"></i></h3>
-                    <div id="enable-content">
-                        <p>
-                            We had been working on developing a new Instrumentation Module for our clients.
-                            We had been developing this on a demo client and when all the features were ready to go, I was tasked with enabling it for 5 of our clients.
-                        </p>
-                        <p>
-                            This involved running a tool created by our team lead, to associate all our instruments with a new Instrument Location, based on their coordinates.
-                            A new Instrument Location layer was then enabled for these 5 clients through SQL scripts. Data seeding was done through EF migrations, to enable the
-                            tables and forms for these clients.
-                        </p>
-                    </div>    
-                </div>
-                <div class="project">
-                    <h3 id="refactor-heading" class="dropdown">Refactoring Enum Controller<i class="fa-solid fa-angle-down angle-icon r-icon"></i></h3>
-                    <div id="refactor-content">
-                        <p class="last">
-                            Our Instrumentation Enums Controller had a separate end-point for each of the enums, and there were a lot!
-                            I updated our controller to have one generic end-point for all our enums. This dramatically reduced the size of our controller and also
-                            saved a lot of time for devs creating new enums, since they no longer have to create a new end-point for every enum.
-                        </p> 
-                    </div>  
-                </div>
             <div id="projects">
                 <h2>Projects</h2>
                 <div class="project">
@@ -128,14 +75,16 @@
                             WoodWorks is a full-stack web application implemented in TypeScript, React and Redux on the front-end and C# and .NET on the back-end. 
                             <br><br>
                             This is an e-commerce web application with a products catalog where users can view the product details, add products to the cart and 
-                            update the quantity of these products in the cart. The DB schema has been set-up using the code first approach of Entity Framework and 
-                            the data seeding for the DB tables was done using EF migrations. A REST API controller was set-up with CRUD end-points for fetching products,
+                            update the quantity of these products in the cart. The <span class="green">DB schema</span> has been set-up using the code first approach of <span class="green">Entity Framework</span> and 
+                            the data seeding for the DB tables was done using EF migrations. A REST API controller was set-up with <span class="green">CRUD end-points</span> for fetching products,
                             fetching basket items, updating basket items and deleting basket items.
                             <br><br>
                             Sorting and filtering functionality was added so users can filter the products by a brand or type, and even sort the
                             products by price. Users may also use the search bar to filter products by keyword.
                             <br><br>
                             A login and register feature was also added for users to access our exclusive catalog of furniture!
+                            <br><br>
+                            The application's front-end was implemented with the aid of <span class="green">React.js</span> and <span class="green">Redux</span>, and styled using the <span class="green">Material UI</span> styling library.
                         </p>
                         <p>
                             Languages: TypeScript, C#, React, .NET, Redux
@@ -159,8 +108,8 @@
                             We have two separate tables - one for the personal budget with its different categories, and one for the transactions between these categories with their 
                             dates and amounts. Any change in one of these tables is reflected on the other. 
                             <br><br>
-                            The database, with these tables, is deigned using PostgreSQL and the server that handles the HTTP requests is designed using Express. The server and 
-                            database are connected using node-postgres and this API is documented using Swagger API.
+                            The database, with these tables, is deigned using <span class="green">PostgreSQL</span> and the server that handles the <span class="green">HTTP requests</span> is designed using <span class="green">Express.js</span>. The server and 
+                            database are connected using node-postgres and this API is documented using <span class="green">Swagger</span>.
                         </p>
                         <p>
                             Languages:  Node.js, Express, SQL
@@ -173,7 +122,7 @@
                         <p>July 2022</p>
                         <p>
                             This is a front-end application that allows a user to browse songs, add them to a playlist and save it to Spotify. this
-                            functionality was made possible using the Spotify API.
+                            functionality was made possible using the <span class="green">Spotify API</span>.
                             <br><br>
                             The user can search for songs, albums or artists and the search results, fetched from Spotify, are displayed to the users in 
                             the "Search Results" column. The users can then select the songs that they wish to add to their playlist. The users can even 
@@ -193,7 +142,7 @@
                     <div id="note-maker-content">
                         <p>May 2022</p>
                         <p>
-                            This is a front-end application, implemented in React.js, that sends the topic for notes as plain text prompts to OpenAI API and displays the results 
+                            This is a front-end application, implemented in <span class="green">React.js</span>, that sends the topic for notes as plain text prompts to <span class="green">OpenAI API</span> and displays the results 
                             in a list. The user is able to enter the topic in a form, which on submitting displays a log of results in a list, sorted from newest to oldest.
                         </p>
                         <p class="last">
@@ -210,7 +159,7 @@
                         <p>April 2022</p>
                         <p>
                             This is a front-end application that allows its users to enter an image url and detects the objects in that image. This behaviour
-                            was implemented using the Clarifai-API, that uses machine learning to detect the objects in an image. The application displays the 
+                            was implemented using the <span class="green">Clarifai-API</span>, that uses machine learning to detect the objects in an image. The application displays the 
                             5 most probable results to the user, along with the image corresponding to the url entered by the user.
                         </p>
                         <p>
@@ -228,7 +177,7 @@
                     <div id="image-partition-content">
                         <p>March 2022</p>
                         <p>
-                            This application, implemented in C++, uses a binary tree (PTree) to represent an image. The nodes of this tree represent rectangular 
+                            This application, implemented in <span class="green">C++</span>, uses a <span class="green">binary tree</span> (PTree) to represent an image. The nodes of this tree represent rectangular 
                             regions of a PNG image. 
                             <br><br>
                             Operations on this tree allow us to Prune the tree which results in a more pixelated image. The Prune function attempts, starting 
@@ -257,13 +206,13 @@
                     <div id="cafe-kiosk-content">
                         <p>December 2021</p>
                         <p>
-                            This is an interactive coffee ordering application, implemented in Java, that allows a user to add/remove drinks 
+                            This is an interactive coffee ordering application, implemented in <span class="green">Java</span>, that allows a user to add/remove drinks 
                             from the shopping cart, view order summary, generate bill and place an order. 
                             <br><br> 
                             This application makes use of an API that allows its users to save and load their orders. It also keeps a log each 
-                            time a drink is added or removed from the cart. The Java Swing library was used to add a Graphical User Interface 
+                            time a drink is added or removed from the cart. The <span class="green">Java Swing</span> library was used to add a <span class="green">Graphical User Interface</span> 
                             and make the application more user friendly. This application was designed with software design principles in mind 
-                            and tested using JUnit.
+                            and tested using <span class="green">JUnit</span>.
                         </p>
                         <p>
                             Languages: Java
@@ -276,20 +225,20 @@
             </div>
             <div id="volunteering">
                 <h2 id="exp">Volunteer Experience</h2>
-                <h3 style="color: #c2d4dd">Science Undergraduate Society (July 2022)</h3>
-                <h4 style="color: #c2d4dd">Academic Experience Coordinator</h4>
+                <h3 style="color: #8d9db6">Science Undergraduate Society (July 2022)</h3>
+                <h4 style="color: #8d9db6">Academic Experience Coordinator</h4>
                 <p>
                     - Work with other coordinators to enhance the academic experience of undergraduate students in the faculty of Science.<br>
                     - Responsible for organizing faculty wide surveys, tutoring and group-study sessions.
                 </p>
-                <h3 style="color: #c2d4dd">UBC Rover Design Team (September 2022)</h3>
-                <h4 style="color: #c2d4dd">Software Team Member</h4>
+                <h3 style="color: #8d9db6">UBC Rover Design Team (September 2022)</h3>
+                <h4 style="color: #8d9db6">Software Team Member</h4>
                 <p>
-                    - Our team works with ROS C++ to program our rover that competes with rovers from Universities across the world<br>
-                    - I am currently working on developing the GUI for launching the rover and displaying diagnostic data, suing the ROS Qt library.
+                    - Our team works with <span class="green">ROS C++</span> to program our rover that competes with rovers from Universities across the world<br>
+                    - I am currently working on developing the GUI for launching the rover and displaying diagnostic data, suing the <span class="green">ROS Qt</span> library.
                 </p>
-                <h3 style="color: #c2d4dd">UBC Design League (September 2022)</h3>
-                <h4 style="color: #c2d4dd">Web Designer</h4>
+                <h3 style="color: #8d9db6">UBC Design League (September 2022)</h3>
+                <h4 style="color: #8d9db6">Web Designer</h4>
                 <p class="last">
                     - Our team organizes CAD Designathons for UBC students and holds CAD workshops to help out with the same<br>
                     - I am responsible for revamping our website and keeeping it updated
@@ -298,30 +247,30 @@
             <div id="skills">
                 <h2>Skills</h2>
                 <p>
-                    <span style="color: #c2d4dd">Programming: </span>
+                    <span style="color: #8d9db6">Programming: </span>
                     Java, C++, C, C#, JavaScript, TypeScript, SQL, Python, R
                 </p>
                 <p>
-                    <span style="color: #c2d4dd">Front-End: </span>
+                    <span style="color: #8d9db6">Front-End: </span>
                     HTML, CSS, React.js, Redux
                 </p>
                 <p>
-                    <span style="color: #c2d4dd">Back-End: </span>
+                    <span style="color: #8d9db6">Back-End: </span>
                     Node, Express.js, PostgreSQL, .NET, Entity Framework
                 </p>
                 <p>
-                    <span style="color: #c2d4dd">Tools: </span>
+                    <span style="color: #8d9db6">Tools: </span>
                     Git, Bootstrap, pgAdmin, Postman, Postbird, Azure Data Studio, Docker, Swagger
                 </p>
                 <p class="last">
-                    <span style="color: #c2d4dd">Testing: </span>
+                    <span style="color: #8d9db6">Testing: </span>
                     JUnit, Mocha, Jest, xUnit
                 </p>
             </div>
             <div id="education">
                 <h2>Education</h2>
-                <h3 style="color: #c2d4dd">University of British Columbia (2020 - current)</h3>
-                <h4 style="color: #c2d4dd">3rd year Computer Science major</h4>
+                <h3 style="color: #8d9db6">University of British Columbia (Sep 2020 - May 2025)</h3>
+                <h4 style="color: #8d9db6">3rd year Computer Science major</h4>
                 <p class="last">
                     - Cumulative average: 83.8%<br>
                     - Outstanding International Student (OIS) award
@@ -348,7 +297,7 @@
                         <i class="fa-solid fa-envelope icon"></i>
                     </a>
                 </p>
-                <a href="./resources/Sparsh_Trivedy_Resume_Coop.pdf" target="_blank"><button id="resume"> Resume <i class="fa-solid fa-download download"></i></button></a>
+                <a href="./resources/Sparsh_Trivedy_Coop_Resume.pdf" target="_blank"><button id="resume"> Resume <i class="fa-solid fa-download download"></i></button></a>
             </div>
         </section>
     </main>

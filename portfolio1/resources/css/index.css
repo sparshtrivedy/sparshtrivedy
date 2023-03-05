@@ -38,6 +38,14 @@
     color: #DBDCE0;
 }
 
+.green {
+    color: #b0db76;
+}
+
+.blue {
+    color: #6b9eb0;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -72,8 +80,8 @@ h1:hover {
 h2 {
     font-size: 20px;
     padding-bottom: 10px;
-    border-bottom: 1px solid #b2c2bf;
-    color: #b2c2bf;
+    border-bottom: 1px solid #6b9eb0;
+    color: #6b9eb0;
 }
 
 h3 {
