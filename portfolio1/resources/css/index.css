@@ -142,15 +142,11 @@ video {
 
 .proj-pic {
     margin-left: 60px;
-    width: 250px;
+    width: 500px;
     margin-top: 10px;
     border-radius: 7px;
     border: solid #FFD300 1px;
     transition: width 1s;
-}
-
-.proj-pic:hover {
-    width: 500px;
 }
 
 figcaption {
@@ -183,7 +179,7 @@ figcaption {
 }
 
 #figures {
-    display: inline-flex;
+    /* display: inline-flex; */
     padding-top: 20px;
 }
 
@@ -215,7 +211,7 @@ main {
 #sparsh-pic {
     height: 500px;
     /* margin-top: 100px; */
-    border-radius: 7px;
+    border-radius: 5px;
     border: solid #FFD300 1px;
     align-self: center;
 }

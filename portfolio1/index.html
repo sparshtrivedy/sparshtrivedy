@@ -22,10 +22,10 @@
         <h1><a href="#">Sparsh Trivedy</a></h1>
         <ul>
             <li><a href="#about-me">About Me</a></li>
+            <li><a href="#skills">Skills</a></li>
             <li><a href="#work">Work Experience</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#volunteering">Volunteering</a></li>
-            <li><a href="#skills">Skills</a></li>
             <li><a href="#education">Education</a></li>
             <li id="last-item"><a href="#contacts">Contact</a></li>
         </ul>
@@ -42,52 +42,132 @@
         <section id="right">
             <div id="about-me">
                 <h2>About Me</h2>
+                <p class="last">
+                    Hello! I'm a CS major who finds joy in exploring the vast world of programming and thrives on exploring new technologies and continuously expanding his skill set. I thoroughly enjoy immersing myself in the latest developments in the field of web development and self-teaching these emerging technologies. Keeping up-to-date with the ever-evolving landscape of programming is a personal commitment that drives my professional growth. When I'm not immersed in code, you can often find me exploring different cafes, seeking inspiration and enjoying a delightful cup of iced latte.
+                </p>
+            </div>
+            <div id="skills">
+                <h2>Skills</h2>
                 <p>
-                    Hi! I am Sparsh Trivedy, a second year Computer Science major at the University of British Columbia. My interests lie in 
-                    Software Engineering and Web Development, Front-end Web Development in particular. 
+                    <span style="color: #8d9db6">Programming: </span>
+                    Python, Java, C++, C, C#, JavaScript, TypeScript, Python, Numpy, Pandas
+                </p>
+                <p>
+                    <span style="color: #8d9db6">Front-End: </span>
+                    HTML, CSS, React.js, Redux, Axios
+                </p>
+                <p>
+                    <span style="color: #8d9db6">Back-End: </span>
+                    Node.js, Express.js, .NET, Django
+                </p>
+                <p>
+                    <span style="color: #8d9db6">Database Management: </span>
+                    SQL, PostgreSQL, SQLite, MS SQL Server, MongoDB
+                </p>
+                <p>
+                    <span style="color: #8d9db6">Serverless/Cloud: </span>
+                    AWS, Lambda, Cognito, IAM, DynamoDB
                 </p>
                 <p class="last">
-                    When I am not working, you can find me curled up on the couch, reading a book, doing digital sketches or cafe hopping 
-                    around Vancouver.
+                    <span style="color: #8d9db6">Tools: </span>
+                    Git, GitHub, Docker, Postman, Postbird
                 </p>
-            </div>   
+            </div>  
             <div id="work">
                 <h2>Work Experience</h2>
-                <h3 style="color: #8d9db6">BGC Engineering (September 2022)</h3>
-                <h4 style="color: #8d9db6">Web Development Co-op</h4>
-                <p class="last">
-                    - Develop full-stack features using TypeScript, React.js, Redux, SQL, .NET and Entity Framework.<br/>
-                    - Work in an <span class="green">Agile Scrum</span> environment and participate in daily stand-ups, sprint planning, retrospectives, and demos.<br/>
-                    - Implemented a modal dialogue that allows users to copy data from existing inspections into a form when adding new inspections, saving them a lot of time spent copy-pasting the same data repeatedly.<br/>
-                    - Created a searchable dropdown component that allows users to filter through all the users from their organization. This component is used across all our forms, improving the overall user experience.<br/>
-                    - Developed an attribute table to store and organize all instrumentation data, accompanied by <span class="green">REST API</span> endpoints to fetch data based on client, making the data more accessible to clients.<br/>
-                    - Refactored and optimized our enums API controller, condensing the individual endpoints into one generic endpoint for all the enums, reducing our file size and making it easier to understand.<br/>
-                    - Added tags to our attachment manager allowing users to add new and re-use existing tags to categorize and organize their attachments, making them more identifiable.<br/>
-                    - <span class="green">Collaborate with product owners, engineers, QA, and design teams</span> to gather requirements, prioritize tasks, and deliver high quality software within the sprint timeline.<br/>
+                <h3 style="color: #8d9db6">Fullstack Web Developer Work Learn</h3>
+                <h4 style="color: #8d9db6">UBC Faculty of Forestry (May 2023 - present)</h4>
+                <p>
+                    •	Collaborated on the development of the TA application portal, utilizing Python, Django, and JavaScript.<br/>
+                    •	Designed and implemented a student dashboard, showcasing application analytics through visual aids such as charts and graphs for enhanced data visualization and comprehension.<br/>
+                    •	Enhanced functionality by adding a tab that allows users to upload training certificates, providing visibility to instructors when reviewing student applications.<br/>
+                    •	Revamped the UI of the student and instructor views, ensuring adherence to UI/UX principles and delivering a visually appealing and intuitive UI.
                 </p>
+
+                <h3 style="color: #8d9db6">Fullstack Web Development Co-op</h3>
+                <h4 style="color: #8d9db6">BGC Engineering (September 2022 - April 2023)</h4>
+                <p class="last">
+                    •	Developed fullstack features using TypeScript, React.js, Redux, .NET and MS SQL Server in an agile scrum environment.<br/>
+                    •	Implemented a modal dialogue that allows users to copy data from existing inspections into a form when adding new inspections, saving them time spent on repetitive data entry.<br/>
+                    •	Created a searchable dropdown component used across all forms, enabling users to filter through organization users, improving overall user experience.<br/>
+                    •	Developed an attribute table to store and organize all instrumentation data, enhancing data accessibility for clients.<br/>
+                    •	Implemented nested repeating sections for landslide inspection forms, allowing users to manage hazards and associated mitigations efficiently.<br/>
+                    •	Enhanced attachment manager by adding tags for categorization and organization of attachments.
+                </p>
+            </div>
             <div id="projects">
                 <h2>Projects</h2>
+                <div class="project">
+                    <h3 id="image-detector-heading" class="dropdown">PlayBook<i class="fa-solid fa-angle-down angle-icon id-icon"></i></h3>
+                    <div id="image-detector-content">
+                        <p>July 2023</p>
+                        <p>
+                            •	Developed a sports management platform using PostgreSQL, Express.js, and React.js, focussing on effective relational database management.<br/>
+                            •	Designed and implemented a well-structured database with considerations for weak entities, ISA relationships, cardinalities, and participation constraints, ensuring efficient storage of data.<br/>
+                            •	Implemented admin and team manager views with role-based permissions, ensuring appropriate access control and security measures.<br/>
+                            •	Incorporated authentication and authorization using JWT web tokens to safeguard user data.<br/>
+                            •	Enabled users to schedule games, manage players, teams, sponsors, and attendees, providing comprehensive control and organization.
+                        </p>
+                        <p>
+                            Tech-stack: Express.js, React.js, PostgreSQL
+                        </p>
+                        <video controls>
+                            <source src="./resources/videos/Screen Recording 2023-07-18 at 10.44.31 AM.mov" type="video/mp4">
+                        </video>
+                    </div>  
+                </div>
+                <div class="project">
+                    <h3 id="personal-budget-heading" class="dropdown">Notes REST API<i class="fa-solid fa-angle-down angle-icon pb-icon"></i></h3>
+                    <div id="personal-budget-content">
+                        <p>July 2023</p>
+                        <p>
+                            •	Created a notes REST API using AWS serverless services and Node.js, with Lambda functions handling API requests routed through API Gateway.<br/>
+                            •	Set-up Cognito user pools and IAM user roles to enforce authorization, ensuring that only authorized users could view the data.<br/>
+                            •	Stored user and notes data in DynamoDB, providing a scalable and reliable database solution.<br/>
+                            •	Implemented CI/CD pipelines using AWS CodePipeline to automate the deployment process and ensure efficient delivery of updates.<br/>
+                            •	Strengthened security measures by incorporating CloudFormation and Web Application Firewall (WAF), enhancing protection against threats and attacks.<br/>
+                            •	Created unit tests using Jest to ensure the reliability and functionality of the REST API, reducing risk of bugs
+                        </p>
+                        <p>
+                            Tech-stack: Node.js, AWS Services
+                        </p>
+                    </div>    
+                </div>
+                <div class="project">
+                    <h3 id="note-maker-heading" class="dropdown">Get-it-together<i class="fa-solid fa-angle-down angle-icon nm-icon"></i></h3>
+                    <div id="note-maker-content">
+                        <p>April 2023</p>
+                        <p>
+                            •	Developed a task-tracking application using the MERN stack (Express.js, Node.js, React.js, Redux, Axios, MongoDB).<br/>
+                            •	Implemented authentication and authorization functionalities using JWT tokens and bcrypt for secure password hashing, prioritizing security in the development process to safeguard user data privacy.<br/>
+                            •	Enabled logged-in users to perform Create, Read, Update, and Delete (CRUD) operations on tasks.<br/>
+                            •	Implemented robust error handling mechanisms to enhance application stability and user experience.
+                            <u><a href="https://get-it-together-wlk9.onrender.com/landing" style="color: #FFD300">View Live Webapp Here</a></u>
+                        </p>
+                        <p class="last">
+                            Tech-stack: MongoDB, Express.js, React.js, Redux
+                        </p>  
+                        <video controls>
+                            <source src="./resources/videos/Screen Recording 2023-07-18 at 10.27.50 AM.mov" type="video/mp4">
+                        </video>
+                    </div>    
+                </div>
                 <div class="project">
                     <h3 id="wood-works-heading" class="dropdown">WoodWorks<i class="fa-solid fa-angle-down angle-icon ww-icon"></i></h3>
                     <div id="wood-works-content">
                         <p>January 2023</p>
                         <p>
-                            WoodWorks is a full-stack web application implemented in TypeScript, React and Redux on the front-end and C# and .NET on the back-end. 
-                            <br><br>
-                            This is an e-commerce web application with a products catalog where users can view the product details, add products to the cart and 
-                            update the quantity of these products in the cart. The <span class="green">DB schema</span> has been set-up using the code first approach of <span class="green">Entity Framework</span> and 
-                            the data seeding for the DB tables was done using EF migrations. A REST API controller was set-up with <span class="green">CRUD end-points</span> for fetching products,
-                            fetching basket items, updating basket items and deleting basket items.
-                            <br><br>
-                            Sorting and filtering functionality was added so users can filter the products by a brand or type, and even sort the
-                            products by price. Users may also use the search bar to filter products by keyword.
-                            <br><br>
-                            A login and register feature was also added for users to access our exclusive catalog of furniture!
-                            <br><br>
-                            The application's front-end was implemented with the aid of <span class="green">React.js</span> and <span class="green">Redux</span>, and styled using the <span class="green">Material UI</span> styling library.
+                            •	Developed a full-stack e-commerce web application called WoodWorks using TypeScript, React, and Redux on the front-end, and C# and .NET on the back-end.<br/>
+                            •	Implemented a product catalog with detailed product views, cart functionality, and the ability to update quantities of products in the cart.<br/>
+                            •	Utilized the code-first approach of Entity Framework to set up the database schema, and performed data seeding using EF migrations.<br/>
+                            •	Created REST API endpoints for CRUD operations, allowing users to fetch products, retrieve basket items, update basket items, and delete basket items.<br/>
+                            •	Implemented sorting and filtering functionality, enabling users to filter products by brand or type and sort products by price.<br/>
+                            •	Developed a search feature allowing users to filter products by keywords using a search bar.<br/>
+                            •	Implemented a secure login and register feature, granting users access to an exclusive catalog of furniture.<br/>
+                            •	Utilized React.js and Redux for the front-end implementation and leveraged the Material UI styling library to enhance the application's visual appeal.          
                         </p>
                         <p>
-                            Languages: TypeScript, C#, React, .NET, Redux
+                            Tech-stack: TypeScript, C#, React, .NET, Redux
                         </p> 
                         <video controls>
                             <source src="./resources/videos/Screen Recording 2023-02-04 at 6.01.37 PM.mp4" type="video/mp4">
@@ -95,82 +175,22 @@
                     </div>      
                 </div>
                 <div class="project">
-                    <h3 id="personal-budget-heading" class="dropdown">Personal Budget API<i class="fa-solid fa-angle-down angle-icon pb-icon"></i></h3>
-                    <div id="personal-budget-content">
-                        <p>August 2022</p>
-                        <p>
-                            This is a REST API that is used to keep track of an individual's personal budget. A user can add categories to/remove categories from their 
-                            budget and assign a balance amount to each category. 
-                            <br><br>
-                            Any debit or credit is reflected on the remaining balance. We also have a separate table of transactions
-                            that keeps track of any and all transactions between the categories of our budget. 
-                            <br><br>
-                            We have two separate tables - one for the personal budget with its different categories, and one for the transactions between these categories with their 
-                            dates and amounts. Any change in one of these tables is reflected on the other. 
-                            <br><br>
-                            The database, with these tables, is deigned using <span class="green">PostgreSQL</span> and the server that handles the <span class="green">HTTP requests</span> is designed using <span class="green">Express.js</span>. The server and 
-                            database are connected using node-postgres and this API is documented using <span class="green">Swagger</span>.
-                        </p>
-                        <p>
-                            Languages:  Node.js, Express, SQL
-                        </p>
-                    </div>    
-                </div>
-                <div class="project">
                     <h3 id="vibing-heading" class="dropdown">Vibing<i class="fa-solid fa-angle-down angle-icon vb-icon"></i></h3>
                     <div id="vibing-content">
                         <p>July 2022</p>
                         <p>
-                            This is a front-end application that allows a user to browse songs, add them to a playlist and save it to Spotify. this
-                            functionality was made possible using the <span class="green">Spotify API</span>.
-                            <br><br>
-                            The user can search for songs, albums or artists and the search results, fetched from Spotify, are displayed to the users in 
-                            the "Search Results" column. The users can then select the songs that they wish to add to their playlist. The users can even 
-                            choose a name for their playlist, remove songs from the playlist and save it to Spotify.
-                            <u><a href="http://vibing.surge.sh/" style="color: #FFD300">View</a></u>
+                            •	Developed a front-end Spotify playlist maker application using React.js and integrating with the Spotify API.<br/>
+                            •	Implemented functionality for users to browse songs by song name, artist, and album.<br/>
+                            •	Integrated the ability for users to add selected songs to a playlist and customize the playlist name.<br/>
+                            <u><a href="http://vibing.surge.sh/" style="color: #FFD300">View Live Webapp Here</a></u>
                         </p>
                         <p>
-                            Languages: HTML, CSS, JavaScript, React.js
+                            Tech-stack: HTML, CSS, JavaScript, React.js
                         </p> 
                         <video controls>
                             <source src="./resources/videos/Screen Recording 2023-02-04 at 6.22.27 PM.mp4" type="video/mp4">
                         </video> 
                     </div>
-                </div>
-                <div class="project">
-                    <h3 id="note-maker-heading" class="dropdown">Note Maker<i class="fa-solid fa-angle-down angle-icon nm-icon"></i></h3>
-                    <div id="note-maker-content">
-                        <p>May 2022</p>
-                        <p>
-                            This is a front-end application, implemented in <span class="green">React.js</span>, that sends the topic for notes as plain text prompts to <span class="green">OpenAI API</span> and displays the results 
-                            in a list. The user is able to enter the topic in a form, which on submitting displays a log of results in a list, sorted from newest to oldest.
-                        </p>
-                        <p class="last">
-                            Languages: HTML, CSS, JavaScript, React.js
-                        </p>  
-                        <figure>
-                            <img class="proj-pic" src="./resources/images/note-maker.jpeg" alt="note-maker interface">
-                        </figure>
-                    </div>    
-                </div>
-                <div class="project">
-                    <h3 id="image-detector-heading" class="dropdown">Image Detector<i class="fa-solid fa-angle-down angle-icon id-icon"></i></h3>
-                    <div id="image-detector-content">
-                        <p>April 2022</p>
-                        <p>
-                            This is a front-end application that allows its users to enter an image url and detects the objects in that image. This behaviour
-                            was implemented using the <span class="green">Clarifai-API</span>, that uses machine learning to detect the objects in an image. The application displays the 
-                            5 most probable results to the user, along with the image corresponding to the url entered by the user.
-                        </p>
-                        <p>
-                            Languages: HTML, CSS, JavaScript, React.js
-                        </p>
-                        <div id="figures">
-                            <figure>
-                                <img class="proj-pic" src="./resources/images/detect.png" alt="image detector interface">
-                            </figure>
-                        </div>
-                    </div>  
                 </div>
                 <div class="project">
                     <h3 id="image-partition-heading" class="dropdown">Image Partitioning Trees<i class="fa-solid fa-angle-down angle-icon ip-icon"></i></h3>
@@ -187,7 +207,7 @@
                             of a tree as an input.
                         </p>
                         <p>
-                            Languages: C++
+                            Tech-stack: C++
                         </p> 
                         <div id="figures">
                             <figure>
@@ -215,7 +235,7 @@
                             and tested using <span class="green">JUnit</span>.
                         </p>
                         <p>
-                            Languages: Java
+                            Tech-stack: Java, Swing, JUnit
                         </p>
                         <figure>
                             <img class="proj-pic" src="./resources/images/cafe-kiosk.jpg" alt="cafe-kiosk interface">
@@ -242,29 +262,6 @@
                 <p class="last">
                     - Our team organizes CAD Designathons for UBC students and holds CAD workshops to help out with the same<br>
                     - I am responsible for revamping our website and keeeping it updated
-                </p>
-            </div>
-            <div id="skills">
-                <h2>Skills</h2>
-                <p>
-                    <span style="color: #8d9db6">Programming: </span>
-                    Java, C++, C, C#, JavaScript, TypeScript, SQL, Python, R
-                </p>
-                <p>
-                    <span style="color: #8d9db6">Front-End: </span>
-                    HTML, CSS, React.js, Redux
-                </p>
-                <p>
-                    <span style="color: #8d9db6">Back-End: </span>
-                    Node, Express.js, PostgreSQL, .NET, Entity Framework
-                </p>
-                <p>
-                    <span style="color: #8d9db6">Tools: </span>
-                    Git, Bootstrap, pgAdmin, Postman, Postbird, Azure Data Studio, Docker, Swagger
-                </p>
-                <p class="last">
-                    <span style="color: #8d9db6">Testing: </span>
-                    JUnit, Mocha, Jest, xUnit
                 </p>
             </div>
             <div id="education">
