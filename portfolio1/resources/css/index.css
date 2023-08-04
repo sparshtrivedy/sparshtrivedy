@@ -303,6 +303,21 @@ button:hover {
 
     p, h3, h4 {
         padding-left: 0;
+        padding-right: 0;
+    }
+
+    .proj-pic {
+        width: 300px;
+        margin: 0;
+    }
+
+    video {
+        width: 300px;
+        margin: 0;
+    }
+
+    header ul {
+        visibility: hidden;
     }
 }
 
