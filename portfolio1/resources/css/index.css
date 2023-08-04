@@ -300,6 +300,10 @@ button:hover {
     #more-info {
         top: 250px;
     }
+
+    p, h3, h4 {
+        padding-left: 0;
+    }
 }
 
 #wood-works-heading, #cafe-kiosk-heading, #image-partition-heading, #vibing-heading, #image-detector-heading, #note-maker-heading, #personal-budget-heading, #attr-table-heading, #modal-heading, #enable-heading, #refactor-heading {
