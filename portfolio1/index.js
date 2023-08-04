@@ -35,22 +35,6 @@ const attrTableIcon = document.getElementsByClassName("at-icon")[0];
 const modalIcon = document.getElementsByClassName("m-icon")[0];
 const enableIcon = document.getElementsByClassName("e-icon")[0];
 const refactorIcon = document.getElementsByClassName("r-icon")[0];
-const facts = ["I have played Tabla, a classical Indian percussion instrument for over 9 years", "I have a working knowledge of the Sanskrit language",
-                "I enjoy reading mythological books, and have read several regional versions and interpretations of epics like the Mahabharata and Ramayana",
-                "My favourite outing is to local cafes around Vancouver, and trying their Lattes and Cold Brews (iced coffee >> hot coffee)", 
-                "My first name is a Sanskrit word meaning touch"];
-
-const funFactDisplay = () => {
-    if (button.innerHTML === 'Fun Fact') {
-        let randomNum = Math.floor(Math.random() * 5);
-        para.innerHTML = facts[randomNum];
-        para.style.display = 'block';
-        button.innerHTML = 'close';
-    } else {
-        para.style.display = 'none';
-        button.innerHTML = 'Fun Fact';
-    }
-}
 
 woodWorksHeading.addEventListener("click", () => {
     if (woodWorksIcon.className === "fa-solid fa-angle-down angle-icon ww-icon") {
@@ -122,5 +106,3 @@ noteMakerHeading.addEventListener("click", () => {
     }
 });
 
-
-button.addEventListener("click", funFactDisplay);
