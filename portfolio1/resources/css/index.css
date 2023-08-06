@@ -322,6 +322,7 @@ button:hover {
     }
 
     header {
+        height: 67px;
         padding-top: 0;
         padding-bottom: 0;
     }
