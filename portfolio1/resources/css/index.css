@@ -87,7 +87,7 @@ h2 {
 h3 {
     font-size: 18px;
     padding-top: 30px;
-    padding-left: 60px;
+    padding-left: 30px;
     padding-bottom: 20px;
 }
 
@@ -97,11 +97,11 @@ h3 {
 
 h4 {
     font-size: 16px;
-    padding-left: 60px;
+    padding-left: 30px;
 }
 
 p {
-    padding: 30px 60px 0 60px;
+    padding: 30px 30px 0 30px;
     font-size: 16px;
     line-height: 1.5em;
     word-spacing: 0.25em;
@@ -133,7 +133,7 @@ span {
 }
 
 video {
-    margin-left: 60px;
+    margin-left: 30px;
     width: 500px;
     margin-top: 10px;
     border-radius: 7px;
@@ -141,7 +141,7 @@ video {
 }
 
 .proj-pic {
-    margin-left: 60px;
+    margin-left: 30px;
     width: 500px;
     margin-top: 10px;
     border-radius: 7px;
@@ -152,7 +152,7 @@ video {
 figcaption {
     font-family: 'Lato', sans-serif;
     font-size: 14px;
-    padding-left: 60px;
+    padding-left: 30px;
     padding-top: 10px;
 }
 
@@ -214,7 +214,7 @@ main {
 
 #sparsh-pic {
     border-radius: 50%;
-    border: solid #FFD300 1px;
+    border: solid #FFD300 2px;
     width: 300px;
     height: 300px;
 }
@@ -282,6 +282,11 @@ button:hover {
 }
 
 @media (max-width: 1026px) {
+    h1 {
+        margin: 0;
+        padding: 0;
+    }
+
     #left {
         visibility: collapse;
     }
@@ -316,8 +321,13 @@ button:hover {
         margin: 0;
     }
 
+    header {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
     header ul {
-        visibility: hidden;
+        visibility: collapse;
     }
 }
 
