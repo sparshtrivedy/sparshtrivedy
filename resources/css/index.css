@@ -219,7 +219,7 @@ main {
     height: 300px;
 }
 
-button {
+#resume {
     margin-top: 80px;
     height: 40px;
     width: 120px;
@@ -233,9 +233,30 @@ button {
     font-family: 'Lato', sans-serif;
 }
 
-button:hover {
+#resume:hover {
     background-color: #CCA900;
     border: 1px solid #CCA900;
+    cursor: pointer;
+}
+
+.project-btn {
+    margin-top: 30px;
+    height: 40px;
+    width: 120px;
+    background-color: transparent;
+    border: 1px solid #FFD300;
+    border-radius: 7px;
+    transition: none;
+    color: #FFD300;
+    font-size: 16px;
+    font-weight: 900;
+    font-family: 'Lato', sans-serif;
+}
+
+.project-btn:hover {
+    background-color: #CCA900;
+    border: 1px solid #CCA900;
+    color: #0A0D1C;
     cursor: pointer;
 }
 
@@ -329,6 +350,10 @@ button:hover {
 
     header ul {
         visibility: collapse;
+    }
+
+    #resume {
+        margin-left: 0px;
     }
 }
 
