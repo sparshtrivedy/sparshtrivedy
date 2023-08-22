@@ -95,6 +95,12 @@ h3 {
     color: #8d9db6;
 }
 
+.mxgraph {
+    max-width:90%;
+    border:1px solid transparent; 
+    margin: 30px;
+}
+
 h4 {
     font-size: 16px;
     padding-left: 30px;
@@ -318,6 +324,10 @@ main {
         margin-right: 0;
     }
 
+    .mxgraph {
+        margin: 0px;
+    }
+
     #left {
         visibility: collapse;
     }
@@ -350,6 +360,10 @@ main {
     video {
         width: 300px;
         margin: 0;
+    }
+
+    figcaption {
+        padding-left: 0px;
     }
 
     header {
