@@ -87,7 +87,7 @@ h2 {
 h3 {
     font-size: 18px;
     padding-top: 30px;
-    padding-left: 30px;
+    /* padding-left: 30px; */
     padding-bottom: 20px;
 }
 
@@ -98,23 +98,23 @@ h3 {
 .mxgraph {
     max-width:90%;
     border:1px solid transparent; 
-    margin: 30px;
+    /* margin: 30px; */
 }
 
 h4 {
     font-size: 16px;
-    padding-left: 30px;
+    /* padding-left: 30px; */
 }
 
 .spread {
     display: flex; 
     justify-content: space-between; 
-    margin-right: 60px; 
+    /* margin-right: 60px;  */
     align-items: center;
 }
 
 p {
-    padding: 30px 30px 0 30px;
+    padding: 10px 0;
     font-size: 16px;
     line-height: 2em;
     word-spacing: 0.25em;
@@ -146,7 +146,7 @@ span {
 }
 
 video {
-    margin-left: 30px;
+    /* margin-left: 30px; */
     width: 500px;
     margin-top: 10px;
     border-radius: 7px;
@@ -154,7 +154,7 @@ video {
 }
 
 .proj-pic {
-    margin-left: 30px;
+    /* margin-left: 30px; */
     width: 500px;
     margin-top: 10px;
     border-radius: 7px;
@@ -283,8 +283,8 @@ main {
 }
 
 #resume {
-    margin-left: 30px;
-    margin-top: 30px;
+    /* margin-left: 30px; */
+    margin-top: 20px;
     padding: 10px;
 }
 
@@ -399,4 +399,32 @@ main {
 
 #exp {
     padding-top: 20px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    padding: 2px;
+    text-align: left;
+    padding-left: 8px;
+    border: 3px solid #10162F;
+}
+
+td {
+    background-color: #1D2340;
+}
+
+th {
+    background-color: #0A0D1C;
+}
+
+tr:hover td {
+  background-color: #1d23408f;
+}
+
+tr:hover th {
+    background-color: #0a0d1c8f;
 }
