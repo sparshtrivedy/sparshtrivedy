@@ -202,7 +202,7 @@ h6 {
 
 main {
     display: grid;
-    grid-template: repeat(5, 20%) / repeat(5, 20%);
+    grid-template: repeat(20, 5%) / repeat(20, 5%);
     color: #F3F3F5;
 }
 
@@ -210,7 +210,7 @@ main {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    gap: 10px;
+    /* gap: 10px; */
     position: fixed;
     width: 35%;
     height: 100%;
@@ -289,9 +289,8 @@ main {
 }
 
 #right {
-    grid-column: 3 / span 3;
-    padding: 30px;
-    padding-left: 0;
+    grid-column: 9 / span 11;
+    padding: 20px 0;
     margin-top: 80px;
 }
 
@@ -333,9 +332,8 @@ main {
     }
     
     #right {
-        padding-left: 30px;
-        margin-top: 100px;
-        grid-column: 1 / span 5;
+        margin-right: 0px;
+        grid-column: 2 / span 18;
     }
 
     #fun-fact {
@@ -407,7 +405,6 @@ table {
 }
 
 th, td {
-    padding: 2px;
     text-align: left;
     padding-left: 8px;
     border: 3px solid #10162F;
@@ -415,6 +412,8 @@ th, td {
 
 td {
     background-color: #1D2340;
+    word-spacing: 0.5em;
+    font-size: 16px;
 }
 
 th {
