@@ -39,7 +39,7 @@
 }
 
 .green {
-    color: #b0db76;
+    color: #8de07c;
 }
 
 .blue {
@@ -294,6 +294,12 @@ main {
     margin-top: 80px;
 }
 
+#middle {
+    grid-column: 4 / span 14;
+    padding: 20px 0;
+    margin-top: 80px;
+}
+
 .contact {
     padding-right: 20px;
 }
@@ -333,6 +339,10 @@ main {
     
     #right {
         margin-right: 0px;
+        grid-column: 2 / span 18;
+    }
+
+    #middle {
         grid-column: 2 / span 18;
     }
 
